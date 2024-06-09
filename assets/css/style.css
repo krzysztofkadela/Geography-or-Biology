@@ -13,4 +13,18 @@ body {
   text-align: center;
   margin-left: auto;
   margin-right: auto;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.heading {
+  width: 60vw;
+  height: fit-content;
+  background-color: black;
+  color: white;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 15px 10px;
+  border-radius: 5px;
 }
