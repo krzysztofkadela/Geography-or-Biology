@@ -37,6 +37,10 @@ body {
   background-color: #3f3204;
   color: #fafafa;
 }
+.btn_game_type:hover{
+  background-color: #fafafa;
+  color: black;
+}
 
 #question_area {
  width: 60vw;
@@ -49,4 +53,25 @@ body {
  display: flex;
  flex-direction: column;
  padding: 10px 10px;
+}
+
+#answer_area {
+  background-color: white;
+  color: black;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.btn_answer {
+  background-color: black;
+  color: #fafafa;
+  width: 60vw;
+  margin-top: 10px;
+  text-align: left;
+}
+
+.btn_answer:hover {
+  background-color: azure;
+  color: #3f3204;
 }
