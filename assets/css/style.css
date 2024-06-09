@@ -75,3 +75,17 @@ body {
   background-color: azure;
   color: #3f3204;
 }
+
+#btn_submit {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px;
+  font-size: 100%;
+  background-color: #3f3204;
+  color: #fafafa;
+}
+
+#btn_submit:hover {
+  background-color: azure;
+  color: #3f3204;
+}
