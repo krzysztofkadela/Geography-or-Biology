@@ -21,10 +21,32 @@ body {
   width: 60vw;
   height: fit-content;
   background-color: black;
-  color: white;
+  color: #fafafa;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding: 15px 10px;
   border-radius: 5px;
+}
+
+.btn_game_type {
+  margin-top: 20px;
+  border-radius: 2px;
+  padding: 15px 32px;
+  font-size: 100%;
+  background-color: #3f3204;
+  color: #fafafa;
+}
+
+#question_area {
+ width: 60vw;
+ height: fit-content;
+ border: 2px solid #3f3204;
+ background-color: #fafafa;
+ color: black;
+ margin-left: auto;
+ margin-right: auto;
+ display: flex;
+ flex-direction: column;
+ padding: 10px 10px;
 }
