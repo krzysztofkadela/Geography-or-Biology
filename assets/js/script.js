@@ -1,5 +1,91 @@
 //set questions and 4 answers for each, only one correct.
+const questionsBio =b[
+    {
+        question: "Question1",
+        answers: {
+            1:"answer1",
+            2:"answer2",
+            3:"answer3",
+            4:"answer3"
+        },
+        correctAnswer: "3"
+    },
+    {
+        question: "Question2",
+        answers: {
+            1:"answer1",
+            2:"answer2",
+            3:"answer3",
+            4:"answer3"
+        },
+        correctAnswer: "3"
+    },
+    {
+        question: "Question2",
+        answers: {
+            1:"answer1",
+            2:"answer2",
+            3:"answer3",
+            4:"answer3"
+        },
+        correctAnswer: "3"
+    },
+    {
+        question: "Question2",
+        answers: {
+            1:"answer1",
+            2:"answer2",
+            3:"answer3",
+   c         4:"answer3"
+        },
+        correctAnswer: "3"
+    }
+    
+];
 
+const questionsGeo =b[
+    {
+        question: "Question1",
+        answers: {
+            1:"answer1",
+            2:"answer2",
+            3:"answer3",
+            4:"answer3"
+        },
+        correctAnswer: "3"
+    },
+    {
+        question: "Question1",
+        answers: {
+            1:"answer1",
+            2:"answer2",
+            3:"answer3",
+            4:"answer3"
+        },
+        correctAnswer: "3"
+    },
+    {
+        question: "Question1",
+        answers: {
+            1:"answer1",
+            2:"answer2",
+            3:"answer3",
+            4:"answer3"
+        },
+        correctAnswer: "3"
+    },
+    {
+        question: "Question1",
+        answers: {
+            1:"answer1",
+            2:"answer2",
+            3:"answer3",
+            4:"answer3"
+        },
+        correctAnswer: "3"
+    }
+    
+];
 
 
 

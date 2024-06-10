@@ -75,10 +75,6 @@ body {
   padding: 5px 5px;
 }
 
-.p_answer:hover {
-  background-color: azure;
-  color: #3f3204;
-}
 
 #answer_box{
   background-color: #bdeb9a;
