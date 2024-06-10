@@ -1,7 +1,7 @@
 //set questions and 4 answers for each, only one correct.
 const questionsBio =b[
     {
-        question: "Question1",
+        question: "What animal is the fastest in the world?",
         answers: {
             1:"answer1",
             2:"answer2",
@@ -36,7 +36,7 @@ const questionsBio =b[
             1:"answer1",
             2:"answer2",
             3:"answer3",
-   c         4:"answer3"
+            4:"answer3"
         },
         correctAnswer: "3"
     }
