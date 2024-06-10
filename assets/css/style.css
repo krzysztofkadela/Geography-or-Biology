@@ -66,10 +66,10 @@ body {
   border-radius: 5px;
 }
 
-.btn_answer {
+.p_answer {
   background-color: black;
   color: #fafafa;
-  width: 60vw;
+  width: 40vw;
   margin-top: 10px;
   text-align: left;
 }
