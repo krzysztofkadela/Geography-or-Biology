@@ -67,11 +67,12 @@ body {
 }
 
 .p_answer {
-  background-color: black;
-  color: #fafafa;
+  background-color: #9f9999;
+  color: #111010;
   width: 40vw;
   margin-top: 10px;
   text-align: left;
+  padding: 5px 5px;
 }
 
 .btn_answer:hover {
