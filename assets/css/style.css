@@ -75,9 +75,20 @@ body {
   padding: 5px 5px;
 }
 
-.btn_answer:hover {
+.p_answer:hover {
   background-color: azure;
   color: #3f3204;
+}
+
+#answer_box{
+  ackground-color: #bdeb9a;
+  color: #111010;
+  width: 60px;
+  height: 30px;
+  margin-top: 10px;
+  text-align: left;
+  padding: 5px 5px;
+  font-size: 25px;
 }
 
 #btn_submit {
