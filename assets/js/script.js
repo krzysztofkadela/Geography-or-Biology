@@ -139,7 +139,8 @@ function startQuize(quizType){
 if(quizType === "game_geography"){
     document.getElementById("question_area").style.backgroundColor="lightblue";
     loadGeoQuestions();
-}else if(quizType === "game_biologye"){
+}else if(quizType === "game_biology"){
+    document.getElementById("question_area").style.backgroundColor="lightgray";
     loadBioQuestions();
 }else{
     alert(`something went wrong, please try again`);
