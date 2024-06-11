@@ -111,11 +111,13 @@ document.addEventListener("DOMContentLoaded", function() {
 
     for (let button of buttons) {
         button.addEventListener("click", function() {
-            if (this.getAttribute("data-type") === "submit") {
+            if (this.getAttribute("id") === "submit") {
                 alert("You clicked Submit!");
             } else {
-                let gameType = this.getAttribute("data-type");
-                alert(`You clicked ${gameType}`);
+                let quizType = this.getAttribute("id");
+                startQuize(quizType);
+
+                alert(`You clicked ${quizType}`);
             }
         });
     }
@@ -130,8 +132,15 @@ document.addEventListener("DOMContentLoaded", function() {
 // Start quiz function , takes a parameter to select the appropriate quiz.
 
 function startQuize(quizType){
-// if Geo
-loadGeoQuestions();
+    //if geography
+if(quizType === "game_geography"){
+    document.getElementById("question_area").style.backgroundColor="lightblue";
+    loadGeoQuestions();
+}else{
+    loadBioQuestions();
+}
+
+
 // else
 loadBioQuestions();
 }
