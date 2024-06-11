@@ -110,3 +110,6 @@ body {
   border: 2px solid #fafafa;
   border-radius: 5px;
 }
+.hidden{
+  display: none;
+}

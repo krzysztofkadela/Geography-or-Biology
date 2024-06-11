@@ -137,6 +137,7 @@ function startQuize(quizType){
 
     //if geography
 if(quizType === "game_geography"){
+    
     document.getElementById("question_area").style.backgroundColor="lightblue";
     loadGeoQuestions();
 }else if(quizType === "game_biology"){
@@ -152,6 +153,8 @@ if(quizType === "game_geography"){
 // 2 functions to display(load) questions for diferent quiz type.
 
 function loadGeoQuestions(){
+    let question [];
+
 
 }
 
