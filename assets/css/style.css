@@ -88,16 +88,16 @@ body {
   text-align: center;
 }
 
-#btn_submit {
+.btn_submit {
   margin-top: 20px;
   border-radius: 2px;
   padding: 15px 32px;
   font-size: 100%;
-  background-color: #3f3204;
+  background-color: #3a3a38;
   color: #fafafa;
 }
 
-#btn_submit:hover {
+.btn_submit:hover {
   background-color: azure;
   color: #3f3204;
 }

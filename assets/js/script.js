@@ -1,5 +1,18 @@
+// setings some variable.
+//const question = document.querySelector('#question');
+
+//varible with all answers for question.
+
+//const answer = Arrayfrom(document.querySelectorAll(".p_answer"));
+
+
+
+
+
+
+
 //set questions and 4 answers for each, only one correct.
-const questionsBio =b[
+const questionsBio = [
     {
         question: "What animal is the fastest in the world?",
         answers: {
@@ -43,7 +56,7 @@ const questionsBio =b[
     
 ];
 
-const questionsGeo =b[
+const questionsGeo = [
     {
         question: "Question1",
         answers: {
@@ -91,7 +104,27 @@ const questionsGeo =b[
 
 
 
-// Wait for DOM to finish loading , get buttons and add events listeners to them
+// Wait for DOM to finish loading , get buttons and add events listeners to them.
+
+document.addEventListener("DOMContentLoaded", function() {
+    let buttons = document.getElementsByTagName("button");
+
+    for (let button of buttons) {
+        button.addEventListener("click", function() {
+            if (this.getAttribute("data-type") === "submit") {
+                alert("You clicked Submit!");
+            } else {
+                let gameType = this.getAttribute("data-type");
+                alert(`You clicked ${gameType}`);
+            }
+        });
+    }
+
+    startQuize("geografi");
+
+});
+
+
 
 
 // Start quiz function , takes a parameter to select the appropriate quiz.
