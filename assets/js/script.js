@@ -112,6 +112,7 @@ document.addEventListener("DOMContentLoaded", function() {
     for (let button of buttons) {
         button.addEventListener("click", function() {
             if (this.getAttribute("id") === "submit") {
+                submitAnswer();
                 alert("You clicked Submit!");
             } else {
                 let quizType = this.getAttribute("id");
@@ -122,7 +123,7 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    startQuize("geografi");
+    //startQuize("geografi");
 
 });
 
@@ -132,20 +133,20 @@ document.addEventListener("DOMContentLoaded", function() {
 // Start quiz function , takes a parameter to select the appropriate quiz.
 
 function startQuize(quizType){
+    let correctAnswer = document.getElementById("correct");//to be check.
+
     //if geography
 if(quizType === "game_geography"){
     document.getElementById("question_area").style.backgroundColor="lightblue";
     loadGeoQuestions();
-}else{
+}else if(quizType === "game_biologye"){
     loadBioQuestions();
+}else{
+    alert(`something went wrong, please try again`);
+    resetQuize();
 }
 
-
-// else
-loadBioQuestions();
 }
-
-
 
 // 2 functions to display(load) questions for diferent quiz type.
 
@@ -159,7 +160,10 @@ function loadBioQuestions(){
 
 //Check ansver function, to check answer and increase conter for correct or inncorect.
 
-function checkAnswer(){
+function submitAnswer(){
+
 
 }
+
+function resetQuize(){};
 
