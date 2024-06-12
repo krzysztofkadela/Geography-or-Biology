@@ -153,13 +153,14 @@ if(quizType === "game_geography"){
 // 2 functions to display(load) questions for diferent quiz type.
 
 function loadGeoQuestions(){
+    rendomNumber();
     let question = [];
 
 
 }
 
 function loadBioQuestions(){
-
+ 
 }
 
 //Check ansver function, to check answer and increase conter for correct or inncorect.
@@ -182,11 +183,11 @@ function rendomNumber(){
     //new array to hold qustions numbers.
     let numbers=new Array();
 
-    for (let i=0;i<questionNumber;i++) {
+    for (let i=0;i<questionNumber.length;i++) {
       let rand = Math.round(Math.random()*(questionNumber-1))+1;
       let exist=false;
       //if number exist in array numbers , get new number.
-      for (let j=0;j<numbers.length;j++) if (numbers[j]==rand) {exist=true;}
+      for (let j=0;j<numbers.length;j++) if (numbers[j]===rand) {exist=true;}
       if (rand) {i--;} else {numbers[i]=rand;}
     }
     return numbers;  
