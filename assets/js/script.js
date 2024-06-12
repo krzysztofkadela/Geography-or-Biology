@@ -171,3 +171,24 @@ function submitAnswer(){
 
 function resetQuize(){};
 
+//rendom number function for  placing questions in random order
+
+function rendomNumber(){
+    //number of questions to be drawn.
+    let questionNumber = 4;
+    //number of questions available.
+    let questionFrom = 4;
+     
+    //new array to hold qustions numbers.
+    let numbers=new Array();
+
+    for (let i=0;i<questionNumber;i++) {
+      let rand = Math.round(Math.random()*(questionNumber-1))+1;
+      let exist=false;
+      //if number exist in array numbers , get new number.
+      for (let j=0;j<numbers.length;j++) if (numbers[j]==rand) {exist=true;}
+      if (rand) {i--;} else {numbers[i]=rand;}
+    }
+    return numbers;  
+}
+
