@@ -140,6 +140,7 @@ if(quizType === "game_geography"){
     document.getElementById("game_geography").classList.add("hidden");
     document.getElementById("question_area").style.backgroundColor="lightblue";
     loadGeoQuestions();
+
 }else if(quizType === "game_biology"){
     document.getElementById("question_area").style.backgroundColor="lightgray";
     loadBioQuestions();
@@ -153,8 +154,7 @@ if(quizType === "game_geography"){
 // 2 functions to display(load) questions for diferent quiz type.
 
 function loadGeoQuestions(){
-    rendomNumber();
-    let question = [];
+    
 
 
 }
