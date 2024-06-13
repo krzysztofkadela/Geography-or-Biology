@@ -146,8 +146,10 @@ if(quizType === "game_geography"){
 }else if(quizType === "game_biology"){
     document.getElementById("game_biology").classList.add("hidden");
     document.getElementById("question_area").style.backgroundColor="lightgray";
-    let domi = rendomNumber();
-    loadBioQuestions();
+   
+    domi = rendomNumber();
+    console.log(domi);
+    loadBioQuestions(domi);
 }else{
     alert(`something went wrong, please try again`);
     resetQuize();
@@ -164,8 +166,7 @@ function loadGeoQuestions(){
 }
 
 function loadBioQuestions(){
-    
- document.getElementById("question").innerHTML=questionsBio[0].question;
+ document.getElementById("question").innerHTML=questionsBio[2].question;
 }
 
 //Check ansver function, to check answer and increase conter for correct or inncorect.
