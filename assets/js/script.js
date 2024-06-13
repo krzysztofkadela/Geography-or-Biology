@@ -138,10 +138,11 @@ function startQuize(quizType){
     //if geography
 if(quizType === "game_geography"){
     document.getElementById("game_geography").classList.add("hidden");
-    document.getElementById("question_area").style.backgroundColor="lightblue";
+    document.getElementById("question_area").style.backgroundColor="lightblue"; 
     loadGeoQuestions();
 
 }else if(quizType === "game_biology"){
+    document.getElementById("game_biology").classList.add("hidden");
     document.getElementById("question_area").style.backgroundColor="lightgray";
     loadBioQuestions();
 }else{
@@ -159,8 +160,9 @@ function loadGeoQuestions(){
 
 }
 
-function loadBioQuestions(){
- 
+function loadBioQuestions(numbers){
+let questionSens = questionsBio.question[numbers[0]];
+ document.getElementById("question").innerHTML=questionSens;
 }
 
 //Check ansver function, to check answer and increase conter for correct or inncorect.
@@ -192,4 +194,6 @@ function rendomNumber(){
     }
     return numbers;  
 }
+
+
 
