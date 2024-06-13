@@ -12,6 +12,8 @@
 
 
 //set questions and 4 answers for each, only one correct.
+
+
 const questionsBio = [
     {
         question: "What animal is the fastest in the world?",
@@ -144,6 +146,7 @@ if(quizType === "game_geography"){
 }else if(quizType === "game_biology"){
     document.getElementById("game_biology").classList.add("hidden");
     document.getElementById("question_area").style.backgroundColor="lightgray";
+    let domi = rendomNumber();
     loadBioQuestions();
 }else{
     alert(`something went wrong, please try again`);
@@ -160,9 +163,9 @@ function loadGeoQuestions(){
 
 }
 
-function loadBioQuestions(numbers){
-let questionSens = questionsBio.question[numbers[0]];
- document.getElementById("question").innerHTML=questionSens;
+function loadBioQuestions(){
+    
+ document.getElementById("question").innerHTML=questionsBio[0].question;
 }
 
 //Check ansver function, to check answer and increase conter for correct or inncorect.
