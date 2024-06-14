@@ -148,7 +148,6 @@ if(quizType === "game_geography"){
     document.getElementById("question_area").style.backgroundColor="lightgray";
    
     domi = rendomNumber();
-    console.log(domi);
     loadBioQuestions(domi);
 }else{
     alert(`something went wrong, please try again`);
@@ -165,8 +164,8 @@ function loadGeoQuestions(){
 
 }
 
-function loadBioQuestions(){
- document.getElementById("question").innerHTML=questionsBio[2].question;
+function loadBioQuestions(domi){
+ document.getElementById("question").innerHTML=questionsBio[domi].question;
 }
 
 //Check ansver function, to check answer and increase conter for correct or inncorect.
@@ -196,7 +195,7 @@ function rendomNumber(){
       for (let j=0;j<numbers.length;j++) if (numbers[j]===rand) {exist=true;}
       if (rand) {i--;} else {numbers[i]=rand;}
     }
-    return numbers;  
+    return numbers[0];  
 }
 
 
