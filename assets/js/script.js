@@ -147,8 +147,8 @@ if(quizType === "game_geography"){
     document.getElementById("game_biology").classList.add("hidden");
     document.getElementById("question_area").style.backgroundColor="lightgray";
    
-    domi =1;
-    loadBioQuestions(domi);
+    domi =rendomNumber();
+    loadBioQuestions(domi[1]);
 }else{
     alert(`something went wrong, please try again`);
     resetQuize();
@@ -189,13 +189,13 @@ function rendomNumber(){
     let numbers=new Array();
 
     for (let i=0;i<questionNumber.length;i++) {
-      let rand = Math.round(Math.random()*(questionNumber-1))+1;
+      let rand = Math.round(Math.random()*(questionFrom-1))+1;
       let exist=false;
       //if number exist in array numbers , get new number.
       for (let j=0;j<numbers.length;j++) if (numbers[j]===rand) {exist=true;}
       if (rand) {i--;} else {numbers[i]=rand;}
     }
-    return numbers[0];  
+    return numbers;
 }
 
 
