@@ -126,7 +126,7 @@ body {
   width: 65vw;
   height: 500px;
   min-height: 300px;
-  padding-top: 40px;
+  padding-top: 60px;
   padding-left: 10px;
   border-radius: 10px;
   margin-top: 400px;
@@ -139,11 +139,15 @@ body {
 font-size: 35px;
 }
 
+#welcome h1{
+  margin-top: 65px;
+}
+
 #start{
-  margin-top: 20px;
+  margin-top: 30px;
   border-radius: 2px;
   padding: 15px 32px;
-  font-size: 25px;
+  font-size: 35px;
   font-weight: 600;
   background-color: #a7a7a5;
   color: #0d0d0d;
