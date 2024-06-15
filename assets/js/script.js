@@ -102,19 +102,16 @@ const questionsGeo = [
     
 ];
 
-
-
-
-
-// Wait for DOM to finish loading , get buttons and add events listeners to them.
-
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
-        button.addEventListener("click", function() {
-            if (this.getAttribute("id") === "submit") {
-                submitAnswer();
+        button.addEventListener("click", function () {
+            if (this.getAttribute("id") === "start") {
+                alert(`You clicked start`);
+                document.getElementById("question_area").classList.remove("hidden");
+            } else if (this.getAttribute("id") === "submit") {
+                clicked();
                 alert("You clicked Submit!");
             } else {
                 let quizType = this.getAttribute("id");
@@ -128,6 +125,37 @@ document.addEventListener("DOMContentLoaded", function() {
     //startQuize("geografi");
 
 });
+
+
+
+
+// Wait for DOM to finish loading , get buttons and add events listeners to them.
+
+
+
+//document.addEventListener("DOMContentLoaded", function() {
+    //let buttons = document.getElementsByTagName("button");
+
+    //for (let button of buttons) {
+        //button.addEventListener("click", function() {
+           //if (this.getAttribute("id") === "start") {
+              //  alert(`You clicked start`);
+              //  document.getElementById("question_area").classList.remove("hidden");
+          //  } else if (this.getAttribute("id") === "submit") {
+           //     submitAnswer();
+           //     alert("You clicked Submit!");
+          //  } else {
+          //      let quizType = this.getAttribute("id");
+          //      startQuize(quizType);
+
+         //       alert(`You clicked ${quizType}`);
+       //     }
+     //   });
+  //  }
+
+    //startQuize("geografi");
+
+//});
 
 
 
