@@ -113,3 +113,18 @@ body {
 .hidden{
   display: none;
 }
+
+#welcome{
+  position: absolute;
+  background-color: rgba(32, 135, 139, 0.7);
+  bottom: 30px;
+  width: 45vw;
+  min-height: 300px;
+  padding-top: 40px;
+  padding-left: 10px;
+  border-radius: 10px;
+}
+
+#welcome h2{
+font-size: 35px;
+}
