@@ -147,7 +147,7 @@ if(quizType === "game_geography"){
     document.getElementById("game_biology").classList.add("hidden");
     document.getElementById("question_area").style.backgroundColor="lightgray";
    
-    domi = rendomNumber();
+    domi =1;
     loadBioQuestions(domi);
 }else{
     alert(`something went wrong, please try again`);
