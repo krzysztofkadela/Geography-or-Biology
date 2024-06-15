@@ -114,6 +114,10 @@ body {
   display: none;
 }
 
+.hidden{
+  visibility: hidden;
+}
+
 #welcome{
   position: absolute;
   background-color: rgba(32, 135, 139, 0.7);
