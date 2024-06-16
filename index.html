@@ -17,15 +17,19 @@
             <button id="start">Start</button>
             <h1>Do you want to test your knowledge of biology or geography? Press Start!</h1>
         </div>
-        <div class = "invisible" class="heading" id="select_game">
-            <h1 class = "hidden" id="logo">Geography or Biology.</h1>
-            <h2 class = "hidden" >In what field do you want to test your knowledge?</h2>
-            <div class = "hidden" id="choice">
-                <button class="btn_game_type" id="game_geography">Geography</button>
-                <button class="btn_game_type" id="game_biology">Biology</button>
+        <div class="invisible" class="heading" id="select_game">
+            <h1 class="hidden" id="logo">Geography or Biology.</h1>
+            <h2 class="hidden">In what field do you want to test your knowledge?</h2>
+            <div id = "choice_container">
+                <div class="hidden" id="choice_geo">
+                    <button class="btn_game_type" id="game_geography">Geography</button>
+                </div>
+                <div class="hidden" id="choice_bio">
+                    <button class="btn_game_type" id="game_biology">Biology</button>
+                </div>
             </div>
         </div>
-        <div class = "hidden" class = "invisible" id="question_area">
+        <div class="hidden" class="invisible" id="question_area">
             <h2 id=question>"question will be here!"</h2>
             <div id="answer_area">
                 <p class="p_answer">Answer 1</p>
@@ -37,7 +41,7 @@
             </div>
 
         </div>
-        <div class = "hidden" id="score">
+        <div class="hidden" id="score">
             <p id="player_name">Player name: <span id="name">Name</span></p>
             <p class="scores">Correct Answers <span id="correct">0</span></p>
             <p class="scores">Incorrect Answers <span id="incorrect">0</span></p>
