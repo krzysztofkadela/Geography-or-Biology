@@ -1,10 +1,10 @@
 body {
-    background-color: lightslategray;
-    text-align: center;
-    
+  background-color: lightslategray;
+  text-align: center;
+
 }
 
-#main_game { 
+#main_game {
   position: relative;
   width: 90%;
   border: 3px solid;
@@ -17,6 +17,45 @@ body {
   padding-top: 5px;
   padding-bottom: 5px;
   background: url(../images/earth.jpg) no-repeat center center/cover;
+}
+
+#welcome {
+  position: absolute;
+  background-color: rgba(32, 135, 139, 0.7);
+  left: 20vw;
+  bottom: 10vh;
+  width: 50vw;
+  height: 50vh;
+  padding: 10px 10px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#welcome h2 {
+  font-size: 35px;
+}
+
+#welcome h1 {
+  margin-top: 65px;
+}
+
+#start {
+  margin-top: 30px;
+  border-radius: 2px;
+  padding: 15px 32px;
+  font-size: 35px;
+  font-weight: 600;
+  background-color: #a7a7a5;
+  color: #0d0d0d;
+  border: 2px solid #f3f3eb;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px #9f9999;
+}
+
+#start:hover {
+  background-color: #83aaf2;
 }
 
 #select_game {
@@ -32,29 +71,31 @@ body {
   text-align: center;
   border-radius: 5px;
 }
-#choice_container{
+
+#choice_container {
   padding: 5px 5px;
   height: fit-content;
   display: flex;
   align-items: stretch;
   flex-direction: row;
   background-color: rgba(32, 135, 139, 0.1);
-  
+
 }
 
-.choice_option{
+.choice_option {
   width: 30vw;
   height: 38vh;
   margin-left: auto;
   margin-right: auto;
   background-color: #9f9999;
-  border:2px solid #111010;
+  border: 2px solid #111010;
 }
 
-#choice_bio{
+#choice_bio {
   background: url(../images/pexels-jerseypics.jpg) no-repeat center center/cover;
 }
-#choice_geo{
+
+#choice_geo {
   background: url(../images/pexels-pixabay.jpg) no-repeat center center/cover;
 }
 
@@ -67,22 +108,25 @@ body {
   background-color: #3f3204;
   color: #f7f2f2;
 }
-.btn_game_type:hover{
+
+.btn_game_type:hover {
   background-color: #fafafa;
   color: black;
 }
 
 #question_area {
- width: 60vw;
- height: fit-content;
- border: 2px solid #3f3204;
- background-color: #fafafa;
- color: black;
- display: flex;
- flex-direction: column;
- padding: 10px 10px;
- border: 2px solid #3f3204;
- border-radius: 5px;
+  position: absolute;
+  left: 6vw;
+  bottom: 6vh;
+  width: 75vw;
+  height: 65vh;
+  padding: 10px 10px;
+  border: 2px solid #3f3204;
+  border-radius: 5px;
+  background-color: #fafafa;
+  color: black;
+  display: flex;
+  flex-direction: column;
 }
 
 #answer_area {
@@ -93,28 +137,6 @@ body {
   align-items: center;
   border: 2px solid #3f3204;
   border-radius: 5px;
-}
-
-.p_answer {
-  background-color: #9f9999;
-  color: #111010;
-  width: 40vw;
-  margin-top: 10px;
-  text-align: left;
-  padding: 5px 5px;
-}
-
-
-#answer_box{
-  background-color: #bdeb9a;
-  color: #111010;
-  width: 60px;
-  height: 30px;
-  margin-top: 10px;
-  text-align: left;
-  padding: 5px 5px;
-  font-size: 25px;
-  text-align: center;
 }
 
 .btn_submit {
@@ -139,48 +161,14 @@ body {
   border: 2px solid #fafafa;
   border-radius: 5px;
 }
-.hidden{
+
+.hidden {
   display: none;
 }
 
-.invisible{
+.invisible {
   visibility: hidden;
 }
 
-#welcome{
-  position: absolute;
-  background-color: rgba(32, 135, 139, 0.7);
-  left: 20vw;
-  bottom: 10vh;
-  width: 50vw;
-  height: 50vh;
-  padding: 10px 10px;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
-#welcome h2{
-font-size: 35px;
-}
 
-#welcome h1{
-  margin-top: 65px;
-}
-
-#start{
-  margin-top: 30px;
-  border-radius: 2px;
-  padding: 15px 32px;
-  font-size: 35px;
-  font-weight: 600;
-  background-color: #a7a7a5;
-  color: #0d0d0d;
-  border: 2px solid #f3f3eb;
-  border-radius: 10px;
-  box-shadow:5px 5px 5px #9f9999;
-}
-#start:hover {
-  background-color: #83aaf2;
-}
