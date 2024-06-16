@@ -5,6 +5,7 @@ body {
 }
 
 #main_game {
+  margin-top: 95px;
   position: relative;
   width: 90%;
   border: 3px solid;
@@ -123,7 +124,7 @@ body {
   padding: 10px 10px;
   border: 2px solid #3f3204;
   border-radius: 5px;
-  background-color: #fafafa;
+  background-color: rgba(144, 180, 242, 0.4);
   color: black;
   display: flex;
   flex-direction: column;
