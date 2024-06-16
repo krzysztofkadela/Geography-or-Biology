@@ -109,6 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function () {
             if (this.getAttribute("id") === "start") {
                 alert(`You clicked start`);
+                document.getElementById("welcome").classList.add("hidden");
                 document.getElementById("question_area").classList.remove("hidden");
             } else if (this.getAttribute("id") === "submit") {
                 clicked();
