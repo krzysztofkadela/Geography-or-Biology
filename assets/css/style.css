@@ -20,12 +20,16 @@ body {
 }
 
 #select_game {
-  width: 60vw;
-  height: fit-content;
-  background-color: black;
+  position: absolute;
+  background-color: rgba(32, 135, 139, 0.7);
+  left: 4vw;
+  bottom: 6vh;
+  width: 80vw;
+  height: 70vh;
+  padding: 10px 10px;
+  border-radius: 10px;
   color: #fafafa;
   text-align: center;
-  padding: 15px 10px;
   border-radius: 5px;
 }
 #choice_container{
