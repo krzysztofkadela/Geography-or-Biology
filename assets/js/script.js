@@ -109,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function() {
         button.addEventListener("click", function () {
             if (this.getAttribute("id") === "start") {
                 alert(`You clicked start`);
-                document.getElementById("welcome").classList.add("hidden");
+                document.getElementById("welcome").classList.add("invisible");
                 //document.getElementById("select_game").classList.remove("invisible");
                //document.getElementById("question_area").classList.remove("hidden");
             } else if (this.getAttribute("id") === "submit") {
