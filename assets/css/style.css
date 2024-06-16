@@ -30,6 +30,13 @@ body {
   padding: 15px 10px;
   border-radius: 5px;
 }
+#choice_container{
+  margin: top 60px; ;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  background-color: #3a3a38;
+}
 
 .choice_option{
   width: 50%;
