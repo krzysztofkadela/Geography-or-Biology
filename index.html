@@ -29,17 +29,27 @@
                 </div>
             </div>
         </div>
-        <div  class="invisible" id="question_area">
-            <h2 id=question>"question will be here!"</h2>
-            <div id="answer_area">
-                <p class="p_answer">Answer 1</p>
-                <p class="p_answer">Answer 1</p>
-                <p class="p_answer">Answer 1</p>
-                <p class="p_answer">Answer 1</p>
-                <input id="answer_box" type="number">
-                <button data-type="submite" id="submit" class="btn_submit">Submit Answer!</button>
-            </div>
-
+        <div   id="question_area">
+            <h2 id = question>"question will be here!"</h2>
+            <ul >
+                <li>
+                  <input type="radio" name="answer" id="a" class="answer">
+                  <label for="a" id="a_text">Answer</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="b" class="answer">
+                  <label for="b" id="b_text">Answer</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="c" class="answer">
+                  <label for="c" id="c_text">Answer</label>
+                </li>
+                <li>
+                  <input type="radio" name="answer" id="d" class="answer">
+                  <label for="d" id="d_text">Answer</label>
+                </li>
+              </ul>
+              <button data-type="submite" id="submit" class="btn_submit">Submit Answer!</button>
         </div>
         <div class="hidden" id="score">
             <p id="player_name">Player name: <span id="name">Name</span></p>
