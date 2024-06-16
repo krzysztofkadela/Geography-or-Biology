@@ -5,6 +5,7 @@ body {
 }
 
 #main_game { 
+  position: relative;
   width: 90%;
   border: 3px solid;
   border-color: black;
@@ -21,7 +22,7 @@ body {
   background: url(../images/pexels-pixabay.jpg) no-repeat center center/cover;
 }
 
-.heading {
+#select_game {
   width: 60vw;
   height: fit-content;
   background-color: black;
@@ -137,7 +138,7 @@ body {
 }
 
 #welcome{
-  position: relative;
+  position: absolute;
   background-color: rgba(32, 135, 139, 0.7);
   bottom: 30px;
   width: 65vw;
