@@ -31,7 +31,6 @@ body {
 #choice_container{
   height: fit-content;
   margin: top 60px; ;
-  position: relative;
   display: flex;
   flex-direction: row;
   background-color: #3a3a38;
@@ -39,7 +38,7 @@ body {
 
 .choice_option{
   width: 50%;
-  height: 600px;
+  height: 50vh;
   background-color: #9f9999;
   text-align: center;
   border:2px solid #111010;
