@@ -110,8 +110,9 @@ document.addEventListener("DOMContentLoaded", function() {
             if (this.getAttribute("id") === "start") {
                 alert(`You clicked start`);
                 document.getElementById("welcome").classList.add("invisible");
-                //document.getElementById("select_game").classList.remove("invisible");
-               //document.getElementById("question_area").classList.remove("hidden");
+                document.getElementById("choice_container").classList.remove("hidden");
+                document.getElementById("choice_geo").classList.remove("hidden");
+                document.getElementById("choice_bio").classList.remove("hidden");
             } else if (this.getAttribute("id") === "submit") {
                 clicked();
                 alert("You clicked Submit!");
