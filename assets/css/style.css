@@ -10,15 +10,12 @@ body {
   border: 3px solid;
   border-color: black;
   border-radius: 15px;
-  height: fit-content;
+  height: 80vh;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
   padding-top: 5px;
   padding-bottom: 5px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
   background: url(../images/pexels-pixabay.jpg) no-repeat center center/cover;
 }
 
@@ -140,14 +137,12 @@ body {
 #welcome{
   position: absolute;
   background-color: rgba(32, 135, 139, 0.7);
-  bottom: 30px;
-  width: 65vw;
-  height: 500px;
-  min-height: 300px;
-  padding-top: 60px;
-  padding-left: 10px;
+  left: 20vw;
+  bottom: 10vh;
+  width: 50vw;
+  height: 50vh;
+  padding: 10px 10px;
   border-radius: 10px;
-  margin-top: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
