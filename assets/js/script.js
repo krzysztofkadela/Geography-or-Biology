@@ -119,7 +119,7 @@ function startQuize(quizType){
 if(quizType === "game_geography"){
     document.getElementById("select_game").classList.add("invisible");
     //document.getElementById("game_geography").classList.add("hidden");
-    document.getElementById("question_area").classList.remove("invisible"); 
+    document.getElementById("question_area").classList.remove("invisible");
     loadGeoQuestions();
 
 }else if(quizType === "game_biology"){
@@ -167,6 +167,10 @@ function loadBioQuestions(){
     answer4.innerText = currentQuizData.d
 }
 
+function deselectAnswers(){
+    quizAnswers.forEach(quizAnswers => quizAnswers.checked = false)
+}
+
 //Check ansver function, to check answer and increase conter for correct or inncorect.
 
 function submitAnswer(){
@@ -174,7 +178,6 @@ function submitAnswer(){
 
 }
 
-function resetQuize(){};
 
 //rendom number function for  placing questions in random order
 
@@ -185,9 +188,9 @@ function rendomNumber(){
     let questionFrom = 4;
      
     //new array to hold qustions numbers.
-    let numbers=new Array();
+    let numbers=[];
 
-    for (let i=0;i<questionNumber.length;i++) {
+    for (let i=0;i<questionNumber;i++) {
       let rand = Math.round(Math.random()*(questionFrom-1))+1;
       let exist=false;
       //if number exist in array numbers , get new number.
