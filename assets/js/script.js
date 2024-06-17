@@ -84,9 +84,20 @@ document.addEventListener("DOMContentLoaded", function() {
                 alert(`You clicked start`);
                 document.getElementById("welcome").classList.add("invisible");
                 document.getElementById("select_game").classList.remove("invisible");
-            } else if (this.getAttribute("id") === "submit") {
-                clicked();
-                alert("You clicked Submit!");
+            } else if (this.getAttribute("id") === "next_submit") {
+                const answer = submitAnswer()
+                if(answer) {
+                    if(answer === questionsGeo[currentQuiz].correctAnswer) {
+                        score++
+                    }
+                    currentQuiz++
+
+                    if(currentQuiz < questionsGeo.length) {
+                        loadGeoQuestions()
+                    } else {
+                        alert(`You finish quize`);
+                    }
+                }
             } else {
                 let quizType = this.getAttribute("id");
                 startQuize(quizType);
@@ -174,9 +185,15 @@ function deselectAnswers(){
 //Check ansver function, to check answer and increase conter for correct or inncorect.
 
 function submitAnswer(){
-
-
+   let answer 
+   quizAnswers.forEach(quizAnswers=> {
+    if(quizAnswers.checked){
+         answer = quizAnswers.id
+    }
+   })
+     return answer
 }
+
 
 
 //rendom number function for  placing questions in random order
