@@ -41,38 +41,39 @@ const questionsBio = [
 const questionsGeo = [
     {
         question: "What mountain is the highest in the world?",
-        1:"Sagarmatha",
-        2:"Lhotse",
-        3:"K2",
-        4:"Manaslu",
-        correctAnswer: "3",
+        a:"Sagarmatha",
+        b:"Lhotse",
+        c:"K2",
+        d:"Manaslu",
+        correctAnswer: "c",
     },
     {
         question: "Which of the following rivers is the longest?",
-        1:"Brahmaputra",
-        2:"Mississipi",
-        3:"Missouri",
-        4:"Ganges",
-        correctAnswer: "3",
+        a:"Brahmaputra",
+        b:"Mississipi",
+        c:"Missouri",
+        d:"Ganges",
+        correctAnswer: "c",
     },
     {
         question: "How many continents are there on earth?",
-        1:"5",
-        2:"8",
-        3:"3",
-        4:"7",
-        correctAnswer: "4",
+        a:"5",
+        b:"8",
+        c:"3",
+        d:"7",
+        correctAnswer: "d",
     },
     {
         question: "Which city is the capital of the Republic of Ireland?",
-        1:"Cork",
-        2:"Belfast",
-        3:"Dublin",
-        4:"Golway",
-        correctAnswer: "3",
+        a:"Cork",
+        b:"Belfast",
+        c:"Dublin",
+        d:"Golway",
+        correctAnswer: "c",
     }
     
 ];
+
 
 document.addEventListener("DOMContentLoaded", function() {
     let buttons = document.getElementsByTagName("button");
@@ -97,6 +98,18 @@ document.addEventListener("DOMContentLoaded", function() {
 
 
 });
+// to point quiz container.
+const quize = document.getElementById("question_area");
+// select all elements with class answer
+const quizAnswers = document.querySelectorAll(".answer");
+const questionElement = document.getElementById("question");
+
+//Seting up variables for each answer.
+
+const answer1 = document.getElementById("answerText1");
+const answer2 = document.getElementById("answerText2");
+const answer3 = document.getElementById("answerText3");
+const answer4 = document.getElementById("answerText4");
 
 
 
@@ -123,15 +136,35 @@ if(quizType === "game_geography"){
 }
 
 // 2 functions to display(load) questions for diferent quiz type.
+let currentQuiz = 0; //need to add rendom numbers 
+let score = 0;
 
 function loadGeoQuestions(){
-    
+    deselectAnswers();
 
+    const currentQuizData = questionsGeo[currentQuiz]
+
+    questionElement.innerText = currentQuizData.question
+    
+    answer1.innerText = currentQuizData.a
+    answer2.innerText = currentQuizData.b
+    answer3.innerText = currentQuizData.c
+    answer4.innerText = currentQuizData.d
 
 }
 
-function loadBioQuestions(domi){
- document.getElementById("question").innerHTML=questionsBio[domi].question;
+function loadBioQuestions(){
+
+ deselectAnswers();
+
+    const currentQuizData = questionsBio[currentQuiz]
+
+    questionElement.innerText = currentQuizData.question
+    
+    answer1.innerText = currentQuizData.a
+    answer2.innerText = currentQuizData.b
+    answer3.innerText = currentQuizData.c
+    answer4.innerText = currentQuizData.d
 }
 
 //Check ansver function, to check answer and increase conter for correct or inncorect.
