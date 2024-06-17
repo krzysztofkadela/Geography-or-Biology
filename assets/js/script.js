@@ -104,7 +104,7 @@ const quize = document.getElementById("question_area");
 const quizAnswers = document.querySelectorAll(".answer");
 const questionElement = document.getElementById("question");
 
-//Seting up variables for each answer.
+//Setting up variables for each answer.
 
 const answer1 = document.getElementById("answerText1");
 const answer2 = document.getElementById("answerText2");
@@ -114,12 +114,12 @@ const answer4 = document.getElementById("answerText4");
 
 
 function startQuize(quizType){
-    let correctAnswer = document.getElementById("correct");//to be check.
-
+    
     //if geography
 if(quizType === "game_geography"){
-    document.getElementById("game_geography").classList.add("hidden");
-    document.getElementById("question_area").style.backgroundColor="lightblue"; 
+    document.getElementById("select_game").classList.add("invisible");
+    //document.getElementById("game_geography").classList.add("hidden");
+    document.getElementById("question_area").classList.remove("invisible"); 
     loadGeoQuestions();
 
 }else if(quizType === "game_biology"){
