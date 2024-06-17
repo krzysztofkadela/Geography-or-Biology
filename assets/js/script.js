@@ -1,103 +1,75 @@
-// setings some variable.
-//const question = document.querySelector('#question');
-
-//varible with all answers for question.
-
-//const answer = Arrayfrom(document.querySelectorAll(".p_answer"));
 
 
-
-
-
-
-
-//set questions and 4 answers for each, only one correct.
-
+//questions and 4 answers with one correct
 
 const questionsBio = [
     {
         question: "What animal is the fastest in the world?",
-        answers: {
-            1:"answer1",
-            2:"answer2",
-            3:"answer3",
-            4:"answer3"
-        },
-        correctAnswer: "3"
+        1:"answer1",
+        2:"answer2",
+        3:"answer3",
+        4:"answer3",
+        correctAnswer: "3",
     },
     {
         question: "Question2",
-        answers: {
-            1:"answer1",
-            2:"answer2",
-            3:"answer3",
-            4:"answer3"
-        },
-        correctAnswer: "3"
+        1:"answer1",
+        2:"answer2",
+        3:"answer3",
+        4:"answer3",
+        correctAnswer: "3",
     },
     {
         question: "Question2",
-        answers: {
-            1:"answer1",
-            2:"answer2",
-            3:"answer3",
-            4:"answer3"
-        },
-        correctAnswer: "3"
+        1:"answer1",
+        2:"answer2",
+        3:"answer3",
+        4:"answer3",
+        correctAnswer: "3",
     },
     {
         question: "Question2",
-        answers: {
-            1:"answer1",
-            2:"answer2",
-            3:"answer3",
-            4:"answer3"
-        },
-        correctAnswer: "3"
+        1:"answer1",
+        2:"answer2",
+        3:"answer3",
+        4:"answer3",
+        correctAnswer: "3",
     }
     
 ];
 
 const questionsGeo = [
     {
-        question: "Question1",
-        answers: {
-            1:"answer1",
-            2:"answer2",
-            3:"answer3",
-            4:"answer3"
-        },
-        correctAnswer: "3"
+        question: "Question2",
+        1:"answer1",
+        2:"answer2",
+        3:"answer3",
+        4:"answer3",
+        correctAnswer: "3",
     },
     {
-        question: "Question1",
-        answers: {
-            1:"answer1",
-            2:"answer2",
-            3:"answer3",
-            4:"answer3"
-        },
-        correctAnswer: "3"
+        question: "Question2",
+        1:"answer1",
+        2:"answer2",
+        3:"answer3",
+        4:"answer3",
+        correctAnswer: "3",
     },
     {
-        question: "Question1",
-        answers: {
-            1:"answer1",
-            2:"answer2",
-            3:"answer3",
-            4:"answer3"
-        },
-        correctAnswer: "3"
+        question: "Question2",
+        1:"answer1",
+        2:"answer2",
+        3:"answer3",
+        4:"answer3",
+        correctAnswer: "3",
     },
     {
-        question: "Question1",
-        answers: {
-            1:"answer1",
-            2:"answer2",
-            3:"answer3",
-            4:"answer3"
-        },
-        correctAnswer: "3"
+        question: "Question2",
+        1:"answer1",
+        2:"answer2",
+        3:"answer3",
+        4:"answer3",
+        correctAnswer: "3",
     }
     
 ];
@@ -123,45 +95,10 @@ document.addEventListener("DOMContentLoaded", function() {
         });
     }
 
-    //startQuize("geografi");
 
 });
 
 
-
-
-// Wait for DOM to finish loading , get buttons and add events listeners to them.
-
-
-
-//document.addEventListener("DOMContentLoaded", function() {
-    //let buttons = document.getElementsByTagName("button");
-
-    //for (let button of buttons) {
-        //button.addEventListener("click", function() {
-           //if (this.getAttribute("id") === "start") {
-              //  alert(`You clicked start`);
-              //  document.getElementById("question_area").classList.remove("hidden");
-          //  } else if (this.getAttribute("id") === "submit") {
-           //     submitAnswer();
-           //     alert("You clicked Submit!");
-          //  } else {
-          //      let quizType = this.getAttribute("id");
-          //      startQuize(quizType);
-
-         //       alert(`You clicked ${quizType}`);
-       //     }
-     //   });
-  //  }
-
-    //startQuize("geografi");
-
-//});
-
-
-
-
-// Start quiz function , takes a parameter to select the appropriate quiz.
 
 function startQuize(quizType){
     let correctAnswer = document.getElementById("correct");//to be check.
