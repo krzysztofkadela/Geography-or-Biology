@@ -24,7 +24,7 @@ body {
   position: absolute;
   background-color: rgba(32, 135, 139, 0.7);
   left: 20vw;
-  bottom: 15vh;
+  bottom: 20vh;
   width: 50vw;
   height: fit-content;
   padding: 10px 10px;
@@ -64,7 +64,7 @@ body {
   position: absolute;
   background-color: rgba(32, 135, 139, 0.2);
   left: 4vw;
-  bottom: 6vh;
+  bottom: 16vh;
   width: 75vw;
   height: 65vh;
   padding: 10px 10px;
