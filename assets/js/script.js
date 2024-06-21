@@ -92,9 +92,10 @@ document.addEventListener("DOMContentLoaded", function () {
                         loadGeoQuestions()
                     } else {
                         alert(`You finish quize`);
+                        //display score function
                     }
                 }
-            } else if(this.getAttribute("id") === "bio_next_submit"){
+            } else if (this.getAttribute("id") === "bio_next_submit") {
                 const answer = submitAnswer()
                 if (answer) {
                     if (answer === questionsBio[currentQuiz].correctAnswer) {
@@ -108,7 +109,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         alert(`You finish quize`);
                     }
                 }
-            }else{
+            } else {
                 let quizType = this.getAttribute("id");
                 startQuize(quizType);
 
@@ -145,7 +146,7 @@ function startQuize(quizType) {
         document.getElementById("question_area").classList.remove("invisible");
         document.getElementById("bio_next_submit").classList.add("invisible");
         loadGeoQuestions();
-        
+
     } else if (quizType === "game_biology") {
         document.getElementById("select_game").classList.add("invisible");
         document.getElementById("question_area").classList.remove("invisible");
@@ -157,7 +158,25 @@ function startQuize(quizType) {
 }
 
 // 2 functions to display(load) questions for diferent quiz type.
-let currentQuiz = 0; //need to add rendom numbers 
+let currentQuiz = []; //need to add rendom numbers 
+//number of questions to be drawn.
+let questionNumber = 4;
+//number of questions available.
+let questionFrom = 4;
+
+
+// Create an array with numbers 1 to 4
+const array = [1, 2, 3, 4];
+// Function to shuffle an array
+function shuffleArray(array) {
+    for (let i = array.length - 1; i > 0; i--) {
+        const j = Math.floor(Math.random() * (i + 1));
+        [array[i], array[j]] = [array[j], array[i]];
+    }
+    return array;
+};
+
+const shuffledNumbers = shuffleArray(array);
 let score = 0;
 
 function loadGeoQuestions() {
@@ -204,32 +223,8 @@ function submitAnswer() {
     return answer
 }
 
+function displayScore() {
 
+}
 
 //rendom number function for  placing questions in random order
-
-function rendomNumber() {
-    //number of questions to be drawn.
-    let questionNumber = 4;
-    //number of questions available.
-    let questionFrom = 4;
-
-    //new array to hold qustions numbers.
-    let numbers = [];
-
-    for (let i = 0; i < questionNumber; i++) {
-        let rand = Math.round(Math.random() * (questionFrom - 1)) + 1;
-        let exist = false;
-        //if number exist in array numbers , get new number.
-        for (let j = 0; j < numbers.length; j++)
-            if (numbers[j] === rand) {
-                exist = true;
-            }
-        if (rand) {
-            i--;
-        } else {
-            numbers[i] = rand;
-        }
-    }
-    return numbers;
-}
