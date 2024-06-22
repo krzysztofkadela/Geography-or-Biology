@@ -69,7 +69,7 @@ const questionsGeo = [{
     }
 
 ];
-let score = 0;
+
 
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
@@ -123,7 +123,9 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 });
+//global variables
 
+let score = 0;
 const nextQuestion = document.getElementById("next_submit");
 // to point quiz container.
 const quize = document.getElementById("question_area");
@@ -138,7 +140,16 @@ const answer2 = document.getElementById("answerText2");
 const answer3 = document.getElementById("answerText3");
 const answer4 = document.getElementById("answerText4");
 
+// 2 functions to display(load) questions for diferent quiz type.
+let currentQuiz = 0; //need to add rendom numbers 
+//number of questions to be drawn.
+let questionNumber = 4;
+//number of questions available.
+let questionFrom = 4;
 
+
+// Create an array with numbers 1 to 4
+const array = [1, 2, 3, 4];
 
 function startQuize(quizType) {
 
@@ -159,16 +170,7 @@ function startQuize(quizType) {
 
 }
 
-// 2 functions to display(load) questions for diferent quiz type.
-let currentQuiz = 0; //need to add rendom numbers 
-//number of questions to be drawn.
-let questionNumber = 4;
-//number of questions available.
-let questionFrom = 4;
 
-
-// Create an array with numbers 1 to 4
-const array = [1, 2, 3, 4];
 // Function to shuffle an array
 function shuffleArray(array) {
     for (let i = array.length - 1; i > 0; i--) {
@@ -228,6 +230,5 @@ function submitAnswer() {
 function displayScore(score) {
     document.getElementById("question_area").classList.add("invisible");
     document.getElementById("score").classList.remove("hidden");
+    document.getElementById("correct").innerText("score");
 }
-
-//rendom number function for  placing questions in random order
