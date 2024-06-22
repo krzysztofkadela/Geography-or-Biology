@@ -111,10 +111,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     } else {
                         alert(`You finish quize`);
                         displayScore(score);
-}
+                    }
 
                 }
-            } else {
+            } else if(this.getAttribute("id") === "restart"){
+                restartGame();
+
+            }else{
                 let quizType = this.getAttribute("id");
                 startQuize(quizType);
 
@@ -234,6 +237,14 @@ function displayScore(score) {
     document.getElementById("score").classList.remove("hidden");
     let myScore = document.getElementById("correct");
     let myInncorect = document.getElementById("incorrect");
-    myInncorect.innerText = 4-score;
-    myScore.innerText  = score;
+    myInncorect.innerText = 4 - score;
+    myScore.innerText = score;
+}
+
+function restartGame() {
+    score = 0;
+    currentQuiz = 0;
+    document.getElementById("welcome").classList.remove("invisible");
+    document.getElementById("score").classList.add("hidden");
+
 }
