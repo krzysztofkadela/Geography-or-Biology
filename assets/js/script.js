@@ -69,7 +69,7 @@ const questionsGeo = [{
     }
 
 ];
-
+let score = 0;
 
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
@@ -93,6 +93,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     } else {
                         alert(`You finish quize`);
                         //display score function
+                        console.log(score);
                     }
                 }
             } else if (this.getAttribute("id") === "bio_next_submit") {
@@ -107,7 +108,9 @@ document.addEventListener("DOMContentLoaded", function () {
                         loadBioQuestions()
                     } else {
                         alert(`You finish quize`);
-                    }
+                        displayScore(score);
+}
+
                 }
             } else {
                 let quizType = this.getAttribute("id");
@@ -142,7 +145,6 @@ function startQuize(quizType) {
     //if geography
     if (quizType === "game_geography") {
         document.getElementById("select_game").classList.add("invisible");
-        //document.getElementById("game_geography").classList.add("hidden");
         document.getElementById("question_area").classList.remove("invisible");
         document.getElementById("bio_next_submit").classList.add("invisible");
         loadGeoQuestions();
@@ -158,7 +160,7 @@ function startQuize(quizType) {
 }
 
 // 2 functions to display(load) questions for diferent quiz type.
-let currentQuiz = []; //need to add rendom numbers 
+let currentQuiz = 0; //need to add rendom numbers 
 //number of questions to be drawn.
 let questionNumber = 4;
 //number of questions available.
@@ -177,7 +179,7 @@ function shuffleArray(array) {
 };
 
 const shuffledNumbers = shuffleArray(array);
-let score = 0;
+
 
 function loadGeoQuestions() {
     deselectAnswers();
@@ -223,8 +225,9 @@ function submitAnswer() {
     return answer
 }
 
-function displayScore() {
-
+function displayScore(score) {
+    document.getElementById("question_area").classList.add("invisible");
+    document.getElementById("score").classList.remove("hidden");
 }
 
 //rendom number function for  placing questions in random order
