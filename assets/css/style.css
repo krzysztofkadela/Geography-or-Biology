@@ -11,7 +11,7 @@ body {
   border: 3px solid;
   border-color: black;
   border-radius: 15px;
-  height: 600px;
+  height: 800px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -23,9 +23,9 @@ body {
 #welcome {
   position: absolute;
   background-color: rgba(32, 135, 139, 0.7);
-  left: 20vw;
+  left: 12vw;
   bottom: 20vh;
-  width: 50vw;
+  width: 60vw;
   height: fit-content;
   padding: 10px 10px;
   border-radius: 10px;
@@ -39,7 +39,7 @@ body {
 }
 
 #welcome h1 {
-  font-size: 25px;
+  font-size: 20px;
   margin-top: 25px;
 }
 
@@ -118,7 +118,7 @@ body {
 
 #question_area {
   position: absolute;
-  left: 6vw;
+  left: 5vw;
   bottom: 6vh;
   width: 75vw;
   height: 65vh;
@@ -156,8 +156,12 @@ body {
 }
 
 #score {
+  margin-top: 60px;
+  margin-left: auto;
+  margin-right: auto;
   width: 65vw;
   height: fit-content;
+  min-height: 600px;
   background-color: black;
   color: #fafafa;
   border: 2px solid #fafafa;
