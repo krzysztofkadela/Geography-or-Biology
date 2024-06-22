@@ -230,5 +230,8 @@ function submitAnswer() {
 function displayScore(score) {
     document.getElementById("question_area").classList.add("invisible");
     document.getElementById("score").classList.remove("hidden");
-    document.getElementById("correct").innerText("score");
+    let myScore = document.getElementById("correct");
+    let myInncorect = document.getElementById("incorrect");
+    myInncorect.innerText = 4-score;
+    myScore.innerText  = score;
 }
