@@ -69,7 +69,8 @@ const questionsGeo = [{
     }
 
 ];
-
+//decaray player name varible empty string.
+let playerName = '';
 
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
@@ -93,6 +94,7 @@ document.addEventListener("DOMContentLoaded", function () {
                     } else {
                         alert(`You finish quize`);
                         //display score function
+                        displayScore(score);
                         console.log(score);
                     }
                 }
