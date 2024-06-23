@@ -60,6 +60,15 @@ body {
   background-color: #83aaf2;
 }
 
+#myInput{
+  height: 25px;
+  width: 160px;
+  background-color: #9f9999;
+  border-radius: 5px;
+  text-align: center;
+  font-size: 15px;
+}
+
 #select_game {
   position: absolute;
   background-color: rgba(32, 135, 139, 0.2);
