@@ -110,7 +110,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (currentQuiz < questionsBio.length) {
                         loadBioQuestions()
                     } else {
-                        alert(`You finish quize`);
                         displayScore(score, playerName);
                     }
 
@@ -122,7 +121,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 let quizType = this.getAttribute("id");
                 startQuize(quizType);
 
-                alert(`You clicked ${quizType}`);
             }
         });
     }
