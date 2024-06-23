@@ -80,6 +80,8 @@ document.addEventListener("DOMContentLoaded", function () {
             if (this.getAttribute("id") === "start") {
                 document.getElementById("welcome").classList.add("invisible");
                 document.getElementById("select_game").classList.remove("invisible");
+                const userName = document.getElementById("myInput").value;
+                playerName=userName;
             } else if (this.getAttribute("id") === "geo_next_submit") {
 
                 const answer = submitAnswer()
@@ -92,7 +94,6 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (currentQuiz < questionsGeo.length) {
                         loadGeoQuestions()
                     } else {
-                        alert(`You finish quize`);
                         //display score function
                         displayScore(score);
                         console.log(score);
@@ -104,13 +105,13 @@ document.addEventListener("DOMContentLoaded", function () {
                     if (answer === questionsBio[currentQuiz].correctAnswer) {
                         score++
                     }
-                    currentQuiz++ //ned to add random number.
+                    currentQuiz++ //need to add random number.
 
                     if (currentQuiz < questionsBio.length) {
                         loadBioQuestions()
                     } else {
                         alert(`You finish quize`);
-                        displayScore(score);
+                        displayScore(score, playerName);
                     }
 
                 }
@@ -232,11 +233,13 @@ function submitAnswer() {
     return answer
 }
 
-function displayScore(score) {
+function displayScore(score, name) {
     document.getElementById("question_area").classList.add("invisible");
     document.getElementById("score").classList.remove("hidden");
     let myScore = document.getElementById("correct");
     let myInncorect = document.getElementById("incorrect");
+    let userName = document.getElementById("player_name");
+    userName.innerText=name;
     myInncorect.innerText = 4 - score;
     myScore.innerText = score;
 }
@@ -244,9 +247,15 @@ function displayScore(score) {
 function restartGame() {
     score = 0;
     currentQuiz = 0;
+    playerName = '';
+    cleareInput();
     document.getElementById("welcome").classList.remove("invisible");
     document.getElementById("score").classList.add("hidden");
     document.getElementById("bio_next_submit").classList.remove("invisible");
     document.getElementById("geo_next_submit").classList.remove("invisible");
 
+}
+
+function cleareInput() {
+    document.getElementById('myInput').value = ''; // Set the value to an empty string
 }
