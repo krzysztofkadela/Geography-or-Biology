@@ -144,6 +144,26 @@ body {
   flex-direction: column;
 }
 
+#question_list{
+  list-style: none;
+  text-align: left;
+  background-color: #3a3a38;
+  height: fit-content;
+  padding: 10px 10px;
+}
+
+#question_list li{
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 15px;
+  background-color: #83aaf2;
+  height: 25px;
+  width: 60vw;
+  border: 1px solid #111010;
+  border-radius: 6px;
+  padding: 5px 5px;
+}
+
 #answer_area {
   background-color: white;
   color: black;
