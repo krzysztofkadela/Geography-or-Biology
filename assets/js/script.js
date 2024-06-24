@@ -95,8 +95,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         loadGeoQuestions()
                     } else {
                         //display score function
-                        displayScore(score);
-                        console.log(score);
+                        displayScore(score, playerName);
                     }
                 }
             } else if (this.getAttribute("id") === "bio_next_submit") {
