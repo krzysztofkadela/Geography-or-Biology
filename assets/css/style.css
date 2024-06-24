@@ -211,6 +211,20 @@ body {
 
 
 /*Media query: Tablet and larger (768px and up)*/
-@media screen and (min-width: 768px) {
-  
+@media screen and (min-width: 700px) {
+
+  #select_game {
+    position: absolute;
+    background-color: rgba(32, 135, 139, 0.2);
+    left: 4vw;
+    bottom: 2vh;
+    width: 75vw;
+    height: 65vh;
+    padding: 10px 10px;
+    border-radius: 10px;
+    color: #fafafa;
+    text-align: center;
+    border-radius: 5px;
+  }
+
 }
