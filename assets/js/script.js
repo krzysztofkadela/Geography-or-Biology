@@ -215,7 +215,7 @@ function deselectAnswers() {
     quizAnswers.forEach(quizAnswers => quizAnswers.checked = false)
 }
 
-//Check ansver function, to check answer and increase conter for correct or inncorect.
+//Check answer function, to check answer and increase conter for correct or inncorect.
 
 function submitAnswer() {
     let answer
@@ -226,8 +226,9 @@ function submitAnswer() {
     })
     return answer
 }
-
+let id = 'score';
 function displayScore(score, name) {
+    changeBackgroundImage(id)
     document.getElementById("question_area").classList.add("invisible");
     document.getElementById("score").classList.remove("hidden");
     let myScore = document.getElementById("correct");
@@ -252,4 +253,10 @@ function restartGame() {
 
 function cleareInput() {
     document.getElementById('myInput').value = ''; // Set the value to an empty string
+}
+
+function changeBackgroundImage(id){
+
+ let elementId = document.getElementById(id);
+ elementId.style.backgroundColor='green';
 }
