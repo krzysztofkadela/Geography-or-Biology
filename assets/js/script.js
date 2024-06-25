@@ -258,5 +258,5 @@ function cleareInput() {
 function changeBackgroundImage(id){
 
  let elementId = document.getElementById(id);
- elementId.style.background='url(assets/images/pexels-sadface.jpg) no-repeat center center/cover';
+ elementId.style.background='url(assets/images/pexels-sadface_100.jpg) no-repeat center center/cover';
 }
