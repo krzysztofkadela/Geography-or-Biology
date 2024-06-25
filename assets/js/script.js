@@ -143,7 +143,10 @@ const answer2 = document.getElementById("answerText2");
 const answer3 = document.getElementById("answerText3");
 const answer4 = document.getElementById("answerText4");
 
-// 2 functions to display(load) questions for diferent quiz type.
+// Call the function to get an array with 4 numbers in random positions
+let result = setQuestionsInRandomPositions();
+
+
 let currentQuiz = 0; //need to add rendom numbers 
 //number of questions to be drawn.
 let questionNumber = 4;
@@ -151,8 +154,6 @@ let questionNumber = 4;
 let questionFrom = 4;
 
 
-// Create an array with numbers 1 to 4
-const array = [1, 2, 3, 4];
 
 function startQuize(quizType) {
 
@@ -173,16 +174,14 @@ function startQuize(quizType) {
 
 }
 
-//second option for random number
+//Function to set numbers in random position
 function setQuestionsInRandomPositions() {
     let numbers = [1, 2, 3, 4]; // Number of questions
     let shuffledNumbers = numbers.sort(() => Math.random() - 0.5);
     return shuffledNumbers;
 }
 
-// Call the function to get an array with 4 numbers in random positions
-let result = setQuestionsInRandomPositions();
-console.log(result);
+
 
 function loadGeoQuestions() {
     deselectAnswers();
