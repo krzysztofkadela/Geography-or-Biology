@@ -246,7 +246,7 @@ function restartGame() {
     document.getElementById("welcome").classList.remove("invisible");
     document.getElementById("score").classList.add("hidden");
     document.getElementById("bio_next_submit").classList.remove("invisible");
-    document.getElementById("geo_next_submit").classList.remove("invisible");
+    document.getElementById("geo_next_submit").classList.remove("hidden");
 
 }
 
