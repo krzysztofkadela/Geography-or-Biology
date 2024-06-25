@@ -71,6 +71,15 @@ const questionsGeo = [{
 ];
 //decaray player name varible empty string.
 let playerName = '';
+// Call the function to get an array with 4 numbers in random positions
+let result;
+
+let currentQuiz = 0; 
+
+//number of questions to be drawn.
+let questionNumber = 4;
+//number of questions available.
+let questionFrom = 4;
 
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
@@ -82,6 +91,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 document.getElementById("select_game").classList.remove("invisible");
                 const userName = document.getElementById("myInput").value;
                 playerName=userName;
+                result = setQuestionsInRandomPositions();
             } else if (this.getAttribute("id") === "geo_next_submit") {
 
                 const answer = submitAnswer()
@@ -143,16 +153,6 @@ const answer2 = document.getElementById("answerText2");
 const answer3 = document.getElementById("answerText3");
 const answer4 = document.getElementById("answerText4");
 
-// Call the function to get an array with 4 numbers in random positions
-let result = setQuestionsInRandomPositions();
-
-
-let currentQuiz = 0; //need to add rendom numbers 
-//number of questions to be drawn.
-let questionNumber = 4;
-//number of questions available.
-let questionFrom = 4;
-
 
 
 function startQuize(quizType) {
@@ -176,7 +176,7 @@ function startQuize(quizType) {
 
 //Function to set numbers in random position
 function setQuestionsInRandomPositions() {
-    let numbers = [1, 2, 3, 4]; // Number of questions
+    let numbers = [0, 1, 2, 3]; // Number of questions
     let shuffledNumbers = numbers.sort(() => Math.random() - 0.5);
     return shuffledNumbers;
 }
@@ -186,7 +186,7 @@ function setQuestionsInRandomPositions() {
 function loadGeoQuestions() {
     deselectAnswers();
 
-    const currentQuizData = questionsGeo[currentQuiz]
+    const currentQuizData = questionsGeo[result[currentQuiz]]
 
     questionElement.innerText = currentQuizData.question
 
@@ -201,7 +201,7 @@ function loadBioQuestions() {
 
     deselectAnswers();
 
-    const currentQuizData = questionsBio[currentQuiz]
+    const currentQuizData = questionsBio[result[currentQuiz]]
 
     questionElement.innerText = currentQuizData.question
 
