@@ -167,7 +167,7 @@ function startQuize(quizType) {
     } else if (quizType === "game_biology") {
         document.getElementById("select_game").classList.add("invisible");
         document.getElementById("question_area").classList.remove("invisible");
-        document.getElementById("geo_next_submit").classList.add("invisible");
+        document.getElementById("geo_next_submit").classList.add("hidden");
         loadBioQuestions();
 
     }
