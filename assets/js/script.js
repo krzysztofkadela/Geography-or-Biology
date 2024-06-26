@@ -69,9 +69,32 @@ const questionsGeo = [{
     }
 
 ];
+
+let score = 0;
+const nextQuestion = document.getElementById("next_submit");
+
+// to point quiz container.
+const quize = document.getElementById("question_area");
+
+// select all elements with class answer
+const quizAnswers = document.querySelectorAll(".answer");
+
+const questionElement = document.getElementById("question");
+
+
+//Setting up variables for each answer.
+
+const answer1 = document.getElementById("answerText1");
+const answer2 = document.getElementById("answerText2");
+const answer3 = document.getElementById("answerText3");
+const answer4 = document.getElementById("answerText4");
+
+
+
 //decaray player name varible empty string.
 let playerName = '';
-// Call the function to get an array with 4 numbers in random positions
+
+
 let result;
 
 let currentQuiz = 0; 
@@ -96,10 +119,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
                 const answer = submitAnswer()
                 if (answer) {
-                    if (answer === questionsGeo[currentQuiz].correctAnswer) {
+                    if (answer === questionsGeo[result[currentQuiz]].correctAnswer) {
                         score++
                     }
-                    currentQuiz++ //ned to add random number.
+                    currentQuiz++
 
                     if (currentQuiz < questionsGeo.length) {
                         loadGeoQuestions()
@@ -111,10 +134,11 @@ document.addEventListener("DOMContentLoaded", function () {
             } else if (this.getAttribute("id") === "bio_next_submit") {
                 const answer = submitAnswer()
                 if (answer) {
-                    if (answer === questionsBio[currentQuiz].correctAnswer) {
+                    if (answer === questionsBio[result[currentQuiz]].correctAnswer) {
                         score++
                     }
-                    currentQuiz++ //need to add random number.
+                    currentQuiz++ 
+                    console.log(score);
 
                     if (currentQuiz < questionsBio.length) {
                         loadBioQuestions()
@@ -136,22 +160,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 });
-//global variables
-
-let score = 0;
-const nextQuestion = document.getElementById("next_submit");
-// to point quiz container.
-const quize = document.getElementById("question_area");
-// select all elements with class answer
-const quizAnswers = document.querySelectorAll(".answer");
-const questionElement = document.getElementById("question");
-
-//Setting up variables for each answer.
-
-const answer1 = document.getElementById("answerText1");
-const answer2 = document.getElementById("answerText2");
-const answer3 = document.getElementById("answerText3");
-const answer4 = document.getElementById("answerText4");
 
 
 
@@ -182,7 +190,7 @@ function setQuestionsInRandomPositions() {
 }
 
 
-
+// Function to load questions to geoagraphy quiz.
 function loadGeoQuestions() {
     deselectAnswers();
 
@@ -196,7 +204,7 @@ function loadGeoQuestions() {
     answer4.innerText = currentQuizData.d
 
 }
-
+// function to load questions for Bio quize.
 function loadBioQuestions() {
 
     deselectAnswers();
