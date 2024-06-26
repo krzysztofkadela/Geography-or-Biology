@@ -144,6 +144,10 @@ body {
   flex-direction: column;
 }
 
+#question{
+  font-size: 20px;
+}
+
 #question_list{
   list-style: none;
   text-align: left;
@@ -173,6 +177,7 @@ body {
   border: 2px solid #3f3204;
   border-radius: 5px;
 }
+
 
 .btn_submit {
   margin-top: 20px;
