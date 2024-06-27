@@ -126,7 +126,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 result = setQuestionsInRandomPositions();
             //part used to check answers after selecting a geography quiz.
             } else if (this.getAttribute("id") === "geo_next_submit") {
-                //if the user selects a geography quiz, questios 
+                //if the user selects a geography quiz, questions.
                 const answer = submitAnswer()
                 if (answer) {
                     if (answer === questionsGeo[result[currentQuiz]].correctAnswer) {
@@ -159,11 +159,14 @@ document.addEventListener("DOMContentLoaded", function () {
                     }
 
                 }
+            //After finishing the quiz, the restart button activates the quiz reset function.
             } else if(this.getAttribute("id") === "restart"){
                 restartGame();
-
+            //After the user selects the quiz type, the appropriate game starts.
             }else{
+                //the value of the "button pressed by user" is assigned into the quizType variable and passed to satrt quiz function.
                 let quizType = this.getAttribute("id");
+                //
                 startQuize(quizType);
 
             }
