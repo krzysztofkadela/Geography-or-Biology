@@ -166,7 +166,7 @@ document.addEventListener("DOMContentLoaded", function () {
             }else{
                 //the value of the "button pressed by user" is assigned into the quizType variable and passed to satrt quiz function.
                 let quizType = this.getAttribute("id");
-                //
+                //launches the appropriate quiz selected by the user. 
                 startQuize(quizType);
 
             }
@@ -177,14 +177,16 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
+//launches the appropriate quiz selected by the user.
 
 function startQuize(quizType) {
 
-    //if geography
+    //if geography selected:
     if (quizType === "game_geography") {
-        document.getElementById("select_game").classList.add("invisible");
-        document.getElementById("question_area").classList.remove("invisible");
-        document.getElementById("bio_next_submit").classList.add("invisible");
+        //replacing class elements to display the questions of the appropriate quiz. 
+        document.getElementById("select_game").classList.add("invisible");//'select_game' set to invisible.
+        document.getElementById("question_area").classList.remove("invisible");//'question_area' set to invisible.
+        document.getElementById("bio_next_submit").classList.add("invisible");//button to submit bio quiz question 'visible' :-).
         loadGeoQuestions();
 
     } else if (quizType === "game_biology") {

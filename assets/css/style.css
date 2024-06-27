@@ -75,7 +75,6 @@ body {
 
 #select_game {
   position: absolute;
-  background-color: rgba(32, 135, 139, 0.2);
   left: 4vw;
   bottom: 30vh;
   width: 75vw;
@@ -93,7 +92,6 @@ body {
   display: flex;
   align-items: stretch;
   flex-direction: row;
-  background-color: rgba(32, 135, 139, 0.1);
 
 }
 
