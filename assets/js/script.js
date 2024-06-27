@@ -69,7 +69,7 @@ const questionsGeo = [{
     }
 
 ];
-
+let id = 'score';
 let score = 0;
 const nextQuestion = document.getElementById("next_submit");
 
@@ -79,6 +79,7 @@ const quize = document.getElementById("question_area");
 // select all elements with class answer
 const quizAnswers = document.querySelectorAll(".answer");
 
+// select element with ID 'question'.
 const questionElement = document.getElementById("question");
 
 
@@ -91,38 +92,48 @@ const answer4 = document.getElementById("answerText4");
 
 
 
-//decaray player name varible empty string.
+//declares a variable to store user Nname.
 let playerName = '';
 
-
+//declares a variable to store question numbers in random order.
 let result;
 
+//a variable used to display questions in a random order and used to check the correctness of answers.
 let currentQuiz = 0; 
 
-//number of questions to be drawn.
+//number of questions to be drawn.(not in use yet)
 let questionNumber = 4;
-//number of questions available.
+
+//number of questions available.(not in use yet)
 let questionFrom = 4;
 
+//assigns Event Listeners to each button after DOM is loaded.
 document.addEventListener("DOMContentLoaded", function () {
     let buttons = document.getElementsByTagName("button");
 
     for (let button of buttons) {
+
         button.addEventListener("click", function () {
+            //buton 'start' when clicked, it starts the quiz
             if (this.getAttribute("id") === "start") {
+                //hide 'welcom' section and show 'choice game' options.
                 document.getElementById("welcome").classList.add("invisible");
                 document.getElementById("select_game").classList.remove("invisible");
+                //take the name entered by the user and assign it to a variable userName.
                 const userName = document.getElementById("myInput").value;
                 playerName=userName;
+                //the number of questions set in random order and assigned to the variable 'result'.
                 result = setQuestionsInRandomPositions();
+            //part used to check answers after selecting a geography quiz.
             } else if (this.getAttribute("id") === "geo_next_submit") {
-
+                //if the user selects a geography quiz, questios 
                 const answer = submitAnswer()
                 if (answer) {
                     if (answer === questionsGeo[result[currentQuiz]].correctAnswer) {
                         score++
                     }
                     currentQuiz++
+                    console.log(score);
 
                     if (currentQuiz < questionsGeo.length) {
                         loadGeoQuestions()
@@ -131,6 +142,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         displayScore(score, playerName);
                     }
                 }
+            //   //part used to check answers after selecting a biology quiz. 
             } else if (this.getAttribute("id") === "bio_next_submit") {
                 const answer = submitAnswer()
                 if (answer) {
@@ -223,7 +235,7 @@ function deselectAnswers() {
     quizAnswers.forEach(quizAnswers => quizAnswers.checked = false)
 }
 
-//Check answer function, to check answer and increase conter for correct or inncorect.
+//Check answer function, to check answer and increase counter for correct or inncorect answers.
 
 function submitAnswer() {
     let answer
@@ -234,7 +246,8 @@ function submitAnswer() {
     })
     return answer
 }
-let id = 'score';
+//
+
 function displayScore(score, name) {
     changeBackgroundImage(id)
     document.getElementById("question_area").classList.add("invisible");
