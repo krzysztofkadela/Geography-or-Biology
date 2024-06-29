@@ -1,3 +1,7 @@
+//add eversion: 6 to remove warnings about  wrong type of variable use.
+
+/*jshint esversion: 6 */
+
 //questions and 4 answers with one correct
 
 const questionsBio = [{
