@@ -2,12 +2,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Oswald:wght@200..700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
+/*Basic style for body element includs fonts family*/
 body {
   background-color: lightslategray;
   text-align: center;
+  font-family: Arial, Helvetica, sans-serif;
 
 }
 
+/*Main game section , background for all sections of game*/
 #main_game {
   margin-top: 95px;
   position: relative;
@@ -24,6 +27,7 @@ body {
   background: url(../images/pexels_dip_mind.jpg) no-repeat center center/cover;
 }
 
+/*Welcome section display on the satrt.*/
 #welcome {
   position: absolute;
   background-color: rgba(99, 163, 165, 0.7);
@@ -38,15 +42,18 @@ body {
   align-items: center;
 }
 
+/*Font size for welcome section h2 element*/
 #welcome h2 {
   font-size: 25px;
 }
 
+/*Welcome section h2 elemen*/
 #welcome h1 {
   font-size: 20px;
   margin-top: 25px;
 }
 
+/*Button to start the quize*/
 #start {
   margin-top: 30px;
   border-radius: 2px;
@@ -64,7 +71,7 @@ body {
   background-color: #83aaf2;
 }
 
-#myInput{
+#myInput {
   height: 25px;
   width: 160px;
   background-color: #9f9999;
@@ -72,6 +79,9 @@ body {
   text-align: center;
   font-size: 15px;
 }
+
+/*Section sellect game. */
+
 
 #select_game {
   position: absolute;
@@ -81,8 +91,16 @@ body {
   height: 65vh;
   padding: 10px 10px;
   border-radius: 10px;
-  color: #fafafa;
+  color: #121111;
   text-align: center;
+  border-radius: 5px;
+}
+
+.logo_select_game {
+  margin-top: 90px;
+  background-color: rgba(99, 163, 165, 0.7);
+  padding: 10px 10px;
+  border: blue;
   border-radius: 5px;
 }
 
@@ -113,13 +131,15 @@ body {
 }
 
 .btn_game_type {
-  margin-top: 20dvh;
-  border-radius: 10px;
+  height: 35px;
+  width: 120px;
+  margin-top: 26dvh;
+  border-radius: 5px;
   padding: 4px 4px;
   font-size: 15px;
   font-weight: 400;
-  background-color: #1a4d54;
-  color: #f7f2f2;
+  background-color: #d7e88e;
+  color: #171717;
 }
 
 .btn_game_type:hover {
@@ -142,11 +162,11 @@ body {
   flex-direction: column;
 }
 
-#question{
+#question {
   font-size: 20px;
 }
 
-#question_list{
+#question_list {
   list-style: none;
   text-align: left;
   background-color: #3a3a38;
@@ -154,7 +174,7 @@ body {
   padding: 10px 10px;
 }
 
-#question_list li{
+#question_list li {
   margin-left: auto;
   margin-right: auto;
   margin-top: 15px;
@@ -196,7 +216,7 @@ body {
   margin-left: auto;
   margin-right: auto;
   width: 65vw;
-  height:60vh;
+  height: 60vh;
   min-height: 200px;
   background-color: black;
   color: #fafafa;
@@ -205,12 +225,12 @@ body {
   padding-top: 40px;
 }
 
-#score_comment{
+#score_comment {
   font-size: 20px;
   color: #fafafa;
 }
 
-#restart{
+#restart {
   margin-top: 90px;
 }
 
