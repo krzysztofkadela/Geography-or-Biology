@@ -153,7 +153,7 @@ body {
   color: black;
 }
 
-/*Section displaying questions*/
+/*Section for displaying questions*/
 
 #question_area {
   position: absolute;
@@ -275,17 +275,33 @@ body {
 
   #select_game {
     position: absolute;
-    background-color: rgba(32, 135, 139, 0.2);
     left: 10vw;
     bottom: 12vh;
     width: 75vw;
-    height: 80vh;
+    height: fit-content;
     padding: 10px 10px;
     border-radius: 10px;
     color: black;
     text-align: center;
     border-radius: 5px;
   }
+
+  .logo_select_game {
+    margin-top: 6vh;
+    margin-bottom: 25px;
+    height: 65px;
+    padding-top: 35px;
+  }
+
+  .btn_game_type {
+    height: 45px;
+    width: 220px;
+    font-size: 18px;
+    font-weight: 800;
+  }
+
+
+  /*Section for displaying questions*/
 
   #question_area {
     position: absolute;
