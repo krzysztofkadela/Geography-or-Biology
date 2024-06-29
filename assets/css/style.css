@@ -269,6 +269,7 @@ body {
 }
 
 /*Media query: Tablet and larger (768px and up)*/
+
 @media screen and (min-width: 700px) {
 
   /*Welcome section*/
@@ -288,6 +289,7 @@ body {
   #welcome h1 {
     font-size: 30px;
   }
+  /*User name input box*/
   #myInput_label{
     margin-top: 60px;
     font-size: 20px;
@@ -299,7 +301,6 @@ body {
     width: 260px;
 
   }
-
 
   /*section select game*/
 
@@ -329,14 +330,23 @@ body {
     font-size: 18px;
     font-weight: 800;
   }
-
-
   /*Section for displaying questions*/
 
   #question_area {
-    position: absolute;
-    left: 30vw;
-    bottom: 16vh;
+  left: 20vw;
+  bottom: 20vh;
+  width: 75vw;
+  height: 65vh;
+  max-width: 400px;
+  max-height: 700px;
+  padding: 10px 10px;
+  background-color: rgba(225, 229, 234, 0.7);
+  }
+
+  #question_list {
+    margin-top: 60px;
+    border-radius: 2px;
+    background-color: rgba(225, 229, 234, 0.7);
   }
 
 }
