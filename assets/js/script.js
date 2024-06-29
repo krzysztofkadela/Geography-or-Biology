@@ -45,7 +45,7 @@ const questionsGeo = [{
         b: "Lhotse",
         c: "K2",
         d: "Manaslu",
-        correctAnswer: "c",
+        correctAnswer: "a",
     },
     {
         question: "Which of the following rivers is the longest?",
