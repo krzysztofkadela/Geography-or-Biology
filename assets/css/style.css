@@ -271,6 +271,36 @@ body {
 /*Media query: Tablet and larger (768px and up)*/
 @media screen and (min-width: 700px) {
 
+  /*Welcome section*/
+  #welcome {
+    height: 70vh;
+    max-height: 1200px;
+   
+  }
+  
+  /*Font size for welcome section h2 element*/
+  #welcome h2 {
+    font-size: 40px;
+    margin-top: 120px;
+  }
+  
+  /*Welcome section h2 elemen*/
+  #welcome h1 {
+    font-size: 30px;
+  }
+  #myInput_label{
+    margin-top: 60px;
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  #myInput {
+    height: 40px;
+    width: 260px;
+
+  }
+
+
   /*section select game*/
 
   #select_game {
