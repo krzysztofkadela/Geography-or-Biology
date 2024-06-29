@@ -127,16 +127,16 @@ document.addEventListener("DOMContentLoaded", function () {
             //part used to check answers after selecting a geography quiz.
             } else if (this.getAttribute("id") === "geo_next_submit") {
                 //if the user selects a geography quiz, questions.
-                const answer = submitAnswer()
+                const answer = submitAnswer();
                 if (answer) {
                     if (answer === questionsGeo[result[currentQuiz]].correctAnswer) {
-                        score++
+                        score++;
                     }
-                    currentQuiz++
+                    currentQuiz++;
                     console.log(score);
 
                     if (currentQuiz < questionsGeo.length) {
-                        loadGeoQuestions()
+                        loadGeoQuestions();
                     } else {
                         //display score function
                         displayScore(score, playerName);
@@ -144,16 +144,16 @@ document.addEventListener("DOMContentLoaded", function () {
                 }
             //   //part used to check answers after selecting a biology quiz. 
             } else if (this.getAttribute("id") === "bio_next_submit") {
-                const answer = submitAnswer()
+                const answer = submitAnswer();
                 if (answer) {
                     if (answer === questionsBio[result[currentQuiz]].correctAnswer) {
-                        score++
+                        score++;
                     }
-                    currentQuiz++ 
+                    currentQuiz++; 
                     console.log(score);
 
                     if (currentQuiz < questionsBio.length) {
-                        loadBioQuestions()
+                        loadBioQuestions();
                     } else {
                         displayScore(score, playerName);
                     }
@@ -211,14 +211,14 @@ function setQuestionsInRandomPositions() {
 function loadGeoQuestions() {
     deselectAnswers();
 
-    const currentQuizData = questionsGeo[result[currentQuiz]]
+    const currentQuizData = questionsGeo[result[currentQuiz]];
 
-    questionElement.innerText = currentQuizData.question
+    questionElement.innerText = currentQuizData.question;
 
-    answer1.innerText = currentQuizData.a
-    answer2.innerText = currentQuizData.b
-    answer3.innerText = currentQuizData.c
-    answer4.innerText = currentQuizData.d
+    answer1.innerText = currentQuizData.a;
+    answer2.innerText = currentQuizData.b;
+    answer3.innerText = currentQuizData.c;
+    answer4.innerText = currentQuizData.d;
 
 }
 // function to load questions for Bio quize.
@@ -226,35 +226,35 @@ function loadBioQuestions() {
 
     deselectAnswers();
 
-    const currentQuizData = questionsBio[result[currentQuiz]]
+    const currentQuizData = questionsBio[result[currentQuiz]];
 
-    questionElement.innerText = currentQuizData.question
+    questionElement.innerText = currentQuizData.question;
 
-    answer1.innerText = currentQuizData.a
-    answer2.innerText = currentQuizData.b
-    answer3.innerText = currentQuizData.c
-    answer4.innerText = currentQuizData.d
+    answer1.innerText = currentQuizData.a;
+    answer2.innerText = currentQuizData.b;
+    answer3.innerText = currentQuizData.c;
+    answer4.innerText = currentQuizData.d;
 }
 
 function deselectAnswers() {
-    quizAnswers.forEach(quizAnswers => quizAnswers.checked = false)
+    quizAnswers.forEach(quizAnswers => quizAnswers.checked = false);
 }
 
 //Check answer function, to check answer and increase counter for correct or inncorect answers.
 
 function submitAnswer() {
-    let answer
+    let answer;
     quizAnswers.forEach(quizAnswers => {
         if (quizAnswers.checked) {
-            answer = quizAnswers.id
+            answer = quizAnswers.id;
         }
-    })
-    return answer
+    });
+    return answer;
 }
 //
 
 function displayScore(score, name) {
-    changeBackgroundImage(id)
+    changeBackgroundImage(id);
     document.getElementById("question_area").classList.add("invisible");
     document.getElementById("score").classList.remove("hidden");
     let myScore = document.getElementById("correct");
