@@ -82,7 +82,7 @@ body {
 
 /*Section sellect game. */
 
-
+/*Main container for select game section*/
 #select_game {
   position: absolute;
   left: 8vw;
@@ -95,15 +95,16 @@ body {
   text-align: center;
   border-radius: 5px;
 }
-
+/*Select game h1 and h2 elements*/
 .logo_select_game {
-  margin-top: 90px;
+  margin-top: 50px;
   background-color: rgba(99, 163, 165, 0.7);
   padding: 10px 10px;
   border:2px, solid,  black;
   border-radius: 5px;
 }
 
+/*container to store 2 choices geo and bio*/
 #choice_container {
   padding: 5px 5px;
   height: fit-content;
@@ -243,6 +244,16 @@ body {
   visibility: hidden;
 }
 
+/*Media query: smal screen (max 400px)*/
+@media screen and (max-width: 400px){
+  .btn_game_type {
+    height: 35px;
+    width: 90px;
+    font-weight: 600;
+    background-color: #d7e88e;
+    color: #171717;
+  }
+}
 
 /*Media query: Tablet and larger (768px and up)*/
 @media screen and (min-width: 700px) {
