@@ -205,6 +205,11 @@ body {
   padding-top: 40px;
 }
 
+#score_comment{
+  font-size: 20px;
+  color: #fafafa;
+}
+
 #restart{
   margin-top: 90px;
 }
