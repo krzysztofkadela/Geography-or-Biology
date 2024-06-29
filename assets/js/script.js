@@ -283,7 +283,7 @@ function restartGame() {
 }
 
 function cleareInput() {
-    document.getElementById('myInput').value = ''; // Set the value to an empty string
+    document.getElementById('myInput').value = 'PLayer'; // Set the value to an empty string
 }
 
 function changeBackgroundImage(id){
