@@ -254,7 +254,7 @@ body {
 /*Media query: smal screen (max 400px)*/
 @media screen and (max-width: 400px){
 
-  /*Game choice butonns*/
+  /*Game choice butonns for choose game typy section.*/
   .btn_game_type {
     height: 35px;
     width: 90px;
@@ -272,18 +272,26 @@ body {
 /*Media query: Tablet and larger (768px and up)*/
 @media screen and (min-width: 700px) {
 
+  /*section select game*/
+
   #select_game {
     position: absolute;
     background-color: rgba(32, 135, 139, 0.2);
-    left: 4vw;
-    bottom: 8vh;
+    left: 10vw;
+    bottom: 12vh;
     width: 75vw;
-    height: fit-content;
+    height: 80vh;
     padding: 10px 10px;
     border-radius: 10px;
     color: black;
     text-align: center;
     border-radius: 5px;
+  }
+
+  #question_area {
+    position: absolute;
+    left: 30vw;
+    bottom: 16vh;
   }
 
 }
