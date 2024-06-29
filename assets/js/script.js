@@ -218,7 +218,7 @@ function loadGeoQuestions() {
     const currentQuizData = questionsGeo[result[currentQuiz]];
 
     questionElement.innerText = currentQuizData.question;
-
+ // displays question.
     answer1.innerText = currentQuizData.a;
     answer2.innerText = currentQuizData.b;
     answer3.innerText = currentQuizData.c;
@@ -233,13 +233,13 @@ function loadBioQuestions() {
     const currentQuizData = questionsBio[result[currentQuiz]];
 
     questionElement.innerText = currentQuizData.question;
-
+ // displays question.
     answer1.innerText = currentQuizData.a;
     answer2.innerText = currentQuizData.b;
     answer3.innerText = currentQuizData.c;
     answer4.innerText = currentQuizData.d;
 }
-
+//deselectiong all selected answer to strat quiz again.
 function deselectAnswers() {
     quizAnswers.forEach(quizAnswers => quizAnswers.checked = false);
 }
@@ -255,7 +255,8 @@ function submitAnswer() {
     });
     return answer;
 }
-//
+
+//the function retrieves the data stored in the score variable and the player's name, displays the result.
 
 function displayScore(score, name) {
     changeBackgroundImage(id);
@@ -268,14 +269,14 @@ function displayScore(score, name) {
     myInncorect.innerText = 4 - score;
     myScore.innerText = score;
 }
-
+//the function sets the basic values ​​of variables to their initial values.
 function restartGame() {
     score = 0;
     currentQuiz = 0;
     playerName = '';
     cleareInput();
-    document.getElementById("welcome").classList.remove("invisible");
-    document.getElementById("score").classList.add("hidden");
+    document.getElementById("welcome").classList.remove("invisible");//shows welcom section
+    document.getElementById("score").classList.add("hidden");//hides score element.
     document.getElementById("bio_next_submit").classList.remove("invisible");
     document.getElementById("geo_next_submit").classList.remove("hidden");
 
