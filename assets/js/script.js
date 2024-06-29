@@ -265,7 +265,12 @@ function displayScore(score, name) {
     let myScore = document.getElementById("correct");
     let myInncorect = document.getElementById("incorrect");
     let userName = document.getElementById("player_name");
-    userName.innerText=name;
+    if(name===''){
+        userName.innerText='Player';
+    }else{
+        userName.innerText=name;
+    }
+    //userName.innerText=name;
     myInncorect.innerText = 4 - score;
     myScore.innerText = score;
 }
@@ -283,7 +288,7 @@ function restartGame() {
 }
 
 function cleareInput() {
-    document.getElementById('myInput').value = 'PLayer'; // Set the value to an empty string
+    document.getElementById('myInput').value = ''; // Set the value to an empty string
 }
 
 function changeBackgroundImage(id){
