@@ -250,7 +250,7 @@ body {
   visibility: hidden;
 }
 
-/*Media query: smal screen (max 400px)*/
+/*Media query: small screen (max 400px)*/
 @media screen and (max-width: 400px){
 
   /*Game choice butonns for choose game typy section.*/
@@ -309,4 +309,24 @@ body {
     bottom: 16vh;
   }
 
+}
+
+/*Media query: Laptop  (1200px and up)*/
+@media screen and (min-width: 1200px){
+
+  #welcome {
+    height: 70vh;
+    max-height: 600px;
+   
+  }
+  
+  /*Font size for welcome section h2 element*/
+  #welcome h2 {
+    font-size: 35px;
+  }
+  
+  /*Welcome section h2 elemen*/
+  #welcome h1 {
+    font-size: 30px;
+  }
 }
