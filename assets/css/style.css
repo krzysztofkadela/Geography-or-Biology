@@ -207,7 +207,7 @@ body {
   border-radius: 5px;
 }
 
-
+/*restart game button*/
 .btn_submit {
   margin-top: 20px;
   border-radius: 2px;
@@ -340,15 +340,22 @@ body {
   max-width: 400px;
   max-height: 700px;
   padding: 10px 10px;
-  background-color: rgba(225, 229, 234, 0.7);
+  background-color: rgba(225, 229, 234, 0.9);
   }
 
   #question_list {
-    margin-top: 60px;
     border-radius: 2px;
-    background-color: rgba(225, 229, 234, 0.7);
+    background-color: rgba(225, 229, 234, 0.6);
   }
 
+  .btn_submit {
+    width: 30vw;
+    margin-top: 60px;
+    padding: 15px 32px;
+    font-size: 100%;
+    background-color: #3a3a38;
+    color:lightgray;
+  }
 }
 
 /*Media query: Laptop  (1200px and up)*/
