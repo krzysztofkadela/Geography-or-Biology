@@ -21,12 +21,12 @@ body {
   margin-right: auto;
   padding-top: 5px;
   padding-bottom: 5px;
-  background: url(../images/earth.jpg) no-repeat center center/cover;
+  background: url(../images/pexels_dip_mind.jpg) no-repeat center center/cover;
 }
 
 #welcome {
   position: absolute;
-  background-color: rgba(32, 135, 139, 0.7);
+  background-color: rgba(99, 163, 165, 0.7);
   left: 12vw;
   bottom: 20vh;
   width: 60vw;
