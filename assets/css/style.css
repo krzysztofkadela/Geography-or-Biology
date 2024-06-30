@@ -18,6 +18,7 @@ body {
   border-color: black;
   border-radius: 15px;
   height: 100vh;
+  min-height: 600px;
   text-align: center;
   margin-left: auto;
   margin-right: auto;
@@ -32,7 +33,7 @@ body {
   background-color: rgba(99, 163, 165, 0.7);
   border: 2px solid black;
   left: 11vw;
-  bottom: 13.5vh;
+  bottom: 12vh;
   width: 68vw;
   max-height: 800px;
   height: fit-content;
@@ -160,7 +161,7 @@ body {
   left: 8vw;
   bottom: 16vh;
   width: 75vw;
-  height: 65vh;
+  height: fit-content;
   max-width: 300px;
   max-height: 500px;
   padding: 10px 10px;
@@ -274,14 +275,14 @@ body {
 
   /*Welcome section*/
   #welcome {
-    height: 70vh;
+    height: fit-content;
     max-height: 1200px;
    
   }
   
   /*Font size for welcome section h2 element*/
   #welcome h2 {
-    font-size: 40px;
+    font-size: 30px;
     margin-top: 120px;
   }
   
@@ -344,13 +345,20 @@ body {
   }
 
   #question_list {
+    margin-top: 60px;
     border-radius: 2px;
     background-color: rgba(225, 229, 234, 0.6);
   }
 
+  #question{
+    margin-top: 60px;
+    font-size: 25px;
+  }
+
   .btn_submit {
     width: 30vw;
-    margin-top: 60px;
+    margin-left: auto;margin-right: auto;
+    margin-top: 90px;
     padding: 15px 32px;
     font-size: 100%;
     background-color: #3a3a38;
@@ -358,7 +366,7 @@ body {
   }
 }
 
-/*Media query: Laptop  (1200px and up)*/
+/*Media query: Laptop  (800px and up)*/
 @media screen and (min-width: 1200px){
 
   #welcome {
