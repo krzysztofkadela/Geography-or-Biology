@@ -366,12 +366,11 @@ body {
   }
 }
 
-/*Media query: Laptop  (800px and up)*/
-@media screen and (min-width: 1200px){
+/*Media query: Laptop  (1200px and up)*/
+@media screen and (min-width: 900px){
 
   #welcome {
-    height: 70vh;
-    max-height: 600px;
+    height: fit-content;
    
   }
   
@@ -384,4 +383,37 @@ body {
   #welcome h1 {
     font-size: 30px;
   }
+  #question_area {
+    left: 20vw;
+    bottom: 10vh;
+    width: 75vw;
+    height: 80vh;
+    max-width: 400px;
+    max-height: 700px;
+    padding: 10px 10px;
+    background-color: rgba(225, 229, 234, 0.9);
+    }
+  
+    #question_list {
+      margin-top: 5vh;
+      border-radius: 2px;
+      background-color: rgba(225, 229, 234, 0.6);
+    }
+  
+    #question{
+      margin-top: 1vh;
+      font-size: 25px;
+    }
+  
+    .btn_submit {
+      width: 20vw;
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 15vh;
+      padding: 15px 32px;
+      font-size: 100%;
+      background-color: #3a3a38;
+      color:lightgray;
+    }
+
 }
