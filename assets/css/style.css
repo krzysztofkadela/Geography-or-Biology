@@ -282,7 +282,7 @@ body {
   
   /*Font size for welcome section h2 element*/
   #welcome h2 {
-    font-size: 30px;
+    font-size: 5vh;
     margin-top: 120px;
   }
   
@@ -366,7 +366,7 @@ body {
   }
 }
 
-/*Media query: Laptop  (1200px and up)*/
+/*Media query: Laptop  (900px and up)*/
 @media screen and (min-width: 900px){
 
   #welcome {
@@ -415,5 +415,10 @@ body {
       background-color: #3a3a38;
       color:lightgray;
     }
+
+}
+
+/*Media query: Laptop  (900px and up)*/
+@media screen and (min-width: 1200px){
 
 }
