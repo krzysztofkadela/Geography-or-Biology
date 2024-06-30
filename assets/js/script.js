@@ -259,7 +259,7 @@ function submitAnswer() {
 //the function retrieves the data stored in the score variable and the player's name, displays the result.
 
 function displayScore(score, name) {
-    changeBackgroundImage(id);
+   
     document.getElementById("question_area").classList.add("invisible");
     document.getElementById("score").classList.remove("hidden");
     let myScore = document.getElementById("correct");
