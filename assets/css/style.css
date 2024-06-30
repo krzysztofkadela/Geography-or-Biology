@@ -226,16 +226,18 @@ body {
   margin-right: auto;
   width: 65vw;
   height: 60vh;
+  font-size: 3vh;
   min-height: 200px;
   background-color: black;
   color: #fafafa;
-  border: 2px solid #fafafa;
+  border: 2px solid black;
   border-radius: 5px;
   padding-top: 40px;
 }
 
+/**/
 #score_comment {
-  font-size: 20px;
+  font-size: 6vh;
   color: #fafafa;
 }
 
@@ -243,10 +245,11 @@ body {
   margin-top: 90px;
 }
 
+/*class hidden to hide/unhide elements*/
 .hidden {
   display: none;
 }
-
+/*class invisible to make elements visible/unvisible*/
 .invisible {
   visibility: hidden;
 }
