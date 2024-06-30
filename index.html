@@ -1,21 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-
+<!-- Head element with important links -->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+<!--Link to style.css-->
     <link rel="stylesheet" href="assets/css/style.css">
 
+ <!--Favicon-->
     <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
 
+<!--Title-->
     <title>Geography or biology</title>
 </head>
 
+<!--Body element-->
 <body>
+    <!--Main game container-->
     <div id="main_game">
+        <!--Welcome section-->
         <div id="welcome">
             <h2 id="welcome_h1">Are you ready to check your knowledge?</h2>
             <button id="start">Start</button>
@@ -24,9 +29,11 @@
             <label id=myInput_label for="myInput">Your Name:</label>
             <input type="text" id="myInput">
         </div>
+        <!--Select game section-->
         <div class="invisible" id="select_game">
             <h1 class = "logo_select_game" id="logo">Geography or Biology.</h1>
             <h2 class = "logo_select_game" id="log_a">In what field do you want to test your knowledge?</h2>
+            <!--Container to store choice options-->
             <div id="choice_container">
                 <div class=" choice_option" id="choice_geo">
                     <button class="btn_game_type" id="game_geography">Geography</button>
@@ -36,7 +43,11 @@
                 </div>
             </div>
         </div>
+
+        <!--Question section-->
+
         <div class="invisible" id="question_area">
+            
             <h2 id="question">"question will be here!"</h2>
             <ul id="question_list">
                 <li>
@@ -59,6 +70,7 @@
             <button data-type="submite" id="geo_next_submit" class="btn_submit">Submit Answer!</button>
             <button data-type="submite" id="bio_next_submit" class="btn_submit">Submit Answer!</button>
         </div>
+        <!--Display score section-->
         <div class="hidden" id="score">
             <h2 id="score_comment">Perfect!! You are the best!</h2>
             <p id="player_name">Player name: <span id="name">Name</span></p>
