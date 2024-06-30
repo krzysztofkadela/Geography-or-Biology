@@ -68,7 +68,7 @@ const questionsGeo = [{
         a: "Cork",
         b: "Belfast",
         c: "Dublin",
-        d: "Golway",
+        d: "Galway",
         correctAnswer: "c",
     }
 
@@ -265,10 +265,20 @@ function displayScore(score, name) {
     let myScore = document.getElementById("correct");
     let myInncorect = document.getElementById("incorrect");
     let userName = document.getElementById("player_name");
+    let scoreComment = document.getElementById("score_comment");
+    
     if(name===''){
         userName.innerText='Player';
     }else{
         userName.innerText=name;
+    }
+   //different comments depending on good answers.
+    if(score===4){
+        scoreComment.innerText="Perfect!! You are the best!";
+    }else if(score>0 && score <0){
+        scoreComment.innerText="Good Job ! ";
+    }else {
+        scoreComment.innerText="You still need to study a bit.";
     }
     //userName.innerText=name;
     myInncorect.innerText = 4 - score;
