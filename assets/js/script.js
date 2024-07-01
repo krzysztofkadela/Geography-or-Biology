@@ -154,7 +154,6 @@ document.addEventListener("DOMContentLoaded", function () {
                         score++;
                     }
                     currentQuiz++; 
-                    console.log(score);
 
                     if (currentQuiz < questionsBio.length) {
                         loadBioQuestions();

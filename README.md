@@ -90,9 +90,12 @@ The name of the quiz will be changed in the future as new categories are added.
 
  * Functions :
 
-    * 
-
- * 
+    * function startQuize(quizType) 
+      * A function that takes the value of the "quizeType" variable and, 
+      * depending on the selected category, calls the appropriate function that displays questions.
+      * By adding an appropriate class, it hides unnecessary elements and displays elements with questions.
+   * function setQuestionsInRandomPositions()
+      * Sets question numbers in random order and returns an array with these numbers.
 ---
 ## Technologies used in the project:
 
