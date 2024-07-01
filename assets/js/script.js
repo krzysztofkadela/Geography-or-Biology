@@ -307,3 +307,16 @@ function changeBackgroundImage(id){
  let elementId = document.getElementById(id);
  elementId.style.background='url(assets/images/pexels-sadface_100.jpg) no-repeat center center/cover';
 }
+//function returns array with 5 random numbers
+function randomQuestions() {
+    let questionsRandomOrder= [];
+
+    while (questionsRandomOrder.length < 5) {
+        let randomNumber = Math.floor(Math.random() * 10) + 1;
+        if (!questionsRandomOrder.includes(randomNumber)) {
+            wylosowaneLiczby.push(randomNumber);
+        }
+    }
+
+    return questionsRandomOrder;
+}
