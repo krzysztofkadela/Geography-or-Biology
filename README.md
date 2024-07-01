@@ -1,9 +1,10 @@
 # Geography or Biology
 
 Geography or Biology. A quiz enabling the user to test their knowledge of geography or biology.
+The name of the quiz will be changed in the future as new categories are added.
 
 
-![Am_I_Responsive](/assets/images/screenshots/Am_I_responsive.png)
+![Am_I_Responsive](/assets/images/screenshots/am_i_responsive.png)
 
 ## Table of Contents
 
@@ -37,39 +38,38 @@ Geography or Biology. A quiz enabling the user to test their knowledge of geogra
  ### User expectations:
 
  * First-time users:
-    * ---
-    * ---
-    * ---
+    * For every user, the most important thing is a simple and easy menu, as well as ease and smoothness of moving to subsequent sections of the quiz.
+
  * When visiting the website again:
-    * ---
-    * ---
-    * ---
+    * The main goal should be to improve your result.
 
  * Frequent user goals
-    * trying to be better
-    * 100 correct answers
+    * The main goal for each user should be to obtain the maximum number of points (correct answers).
+    * Competition to be the best.
   - - -
 
 
 ## Quize Structure:
 
 ### Start Menu:
-![Start_Quize](/assets/images/screenshots/Start.png) 
-   * Info about
-   * Start Button
-   * User Name optional.
-   * ?
+![Start_Quize](/assets/images/screenshots/start.png) 
+  * Start Quize Menu Contains:
+    * An inscription encouraging you to take part in the quiz.
+    * Information that the quiz contains several categories.
+    * Start button allowing you to proceed to the next part of the quiz.
+    * A place where the user can write down his name (optional, you can also play anonymously).
 
 ### Quize categories Choice:
 ![Game_Choice](/assets/images/screenshots/quize_categories.png)
 
-   * Game categorry choice.
+   * The quiz contains several categories (two for now). In this part, the user can choose which category wants to test knowledge.
 
 ### Questions:
-  ![Questions_section](/assets/images/screenshots/)
+  ![Questions_section](/assets/images/screenshots/questions_display.png)
 
-   * Questions with for answers.
-   * Subite answer button.
+   * The questions are displayed in different orders.
+   * Each question contains 4 answers, only one of which is correct.
+   * To move on to the next question, the user must select one of the answers and click the button "Submit Answer".
 
 ### Score display :
    ![Display_results](/assets/images/screenshots/)
