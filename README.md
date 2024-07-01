@@ -92,7 +92,14 @@ The name of the quiz will be changed in the future as new categories are added.
 ## Java script structure :
 
  * EventListeners :
-    * After DOM is loaded each button is getting Event Listener,
+    * After DOM is loaded each button is getting Event Listener.
+     * The conditional if statement checks which button was selected by the user by checking its id.
+     * If the "Start" button has been pressed :
+       * Section with id 'welcome' was hidden by adding a class 'invisible'.
+       * Section with id 'choice_game' is displayed by deleting the class 'invisible'.
+       * The username is taken and assigned to the variable.
+       * The results variable is declared and gets its value from the function 'setQuestionsInRandomPositions()'.
+     * If   
 
  * Functions :
 
