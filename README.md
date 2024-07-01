@@ -14,10 +14,9 @@ The name of the quiz will be changed in the future as new categories are added.
 
 ### [Features_coming_soon](#features-coming-soon)
 ### [Technologies_used_in_the_project](#technologies-used-in-the-project)
-### [Design](#design-1)
-### [Programs_&_Libraries_Used_in_project](#programs__libraries_used_in_project)
+### [Programs_&_Libraries_Used_in_project](#programs--libraries-used-in-project)
 ### [Testing](#testing-1)
-* [Validation_reports](#validation-results)
+* [Validation_reports](#validation-reports)
 * [Manual_Testing](#manual-testing)
 * [Lighthouse_Testing](#lighthouse-testing)
 ### [Deployment](#deployment-1)
