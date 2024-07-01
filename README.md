@@ -123,7 +123,25 @@ The name of the quiz will be changed in the future as new categories are added.
  * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
 ### Validation reports:
+   
+   * HTML warning in W3C Markup Validator:
+  ![warning_html](/assets/images/screenshots/html_warning.png)
+  ![emplty_h2](/assets/images/screenshots/empty_he_element.png)
 
+  * After solving the problem:
+  ![html_no_warnings](/assets/images/screenshots/html_no_warnings.png)
+
+  * W3C CSS Validator shows one error and one warning.
+  ![css_error](/assets/images/screenshots/css_error.png)
+
+  * After solving the problem:
+  ![css_ok](/assets/images/screenshots/css_ok.png)
+
+  * jshint found 37 warning in js code.
+  ![jshint_test](/assets/images/screenshots/jshint_37warnings.png)
+
+  * After solving the problem with most of the warnings, one remained
+  ![jshint_warnings](/assets/images/screenshots/jshint_warnings.png)
 
 
 
