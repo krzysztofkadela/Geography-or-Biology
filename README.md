@@ -121,13 +121,45 @@ Geography or Biology. A quiz enabling the user to test their knowledge of geogra
 
 ### Validation reports:
 
-<details>
-<summary>index.html
-</summary>
+
 
 
 
 ### Manual Testing:
+
+<table>
+  <tr>
+    <th>Button</th>
+    <th>Expected Action</th>
+    <th>Result</th>
+  </tr>
+  <tr>
+    <td>Start</td>
+    <td>Pass to next section</td>
+    <td>After pressing 'Start' button game passing to section Choice category.</td>
+  </tr>
+  <tr>
+    <td>Geography</td>
+    <td>Start Geography quize, display questions.</td>
+    <td>Geography questions displayed.</td>
+  </tr>
+  <tr>
+    <td>Biology</td>
+    <td>Start Biology quize, display questions.</td>
+    <td>Biology questions displayed.</td>
+  </tr>
+  <tr>
+    <td>Submit Answer</td>
+    <td>After user set answer , passing to next question.</td>
+    <td>Next question displayed.</td>
+  </tr>
+  <tr>
+    <td>Restar Game</td>
+    <td>Restart Quize , display fierst page and reset quiz.</td>
+    <td>Game restart.</td>
+  </tr>
+</table>
+
 
 * The website was tested on Google Chrome, Microsoft Edge.
 * The website was tested  on a desctop 27" screen, laptop lenovo LOQ, and Samsung Galaxy S22 mobile phone.
@@ -136,9 +168,6 @@ Geography or Biology. A quiz enabling the user to test their knowledge of geogra
 ### Lighthouse testing:
 
 #### Mobile analysis
-<details>
-<summary>Main Page
-</summary>
 
 
 
