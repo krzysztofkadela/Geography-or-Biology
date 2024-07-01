@@ -3,13 +3,13 @@
 Geography or Biology. A quiz enabling the user to test their knowledge of geography or biology.
 
 
-![Am_I_Responsive](/assets/images/screenshots/HeroReademe.png)
+![Am_I_Responsive](/assets/images/screenshots/Am_I_responsive.png)
 
 ## Table of Contents
 
 ### [User_Experience_(UX)](#user-experienceux)
-* [User_Stories](#user-stories)
-### [Quize Structure](#features-1)
+* [User_expectations](#user-expectations)
+### [Quize Structure](#quize-structure-1)
 
 ### [Features_coming_soon](#features-coming-soon)
 ### [Technologies_used_in_the_project](#technologies-used-in-the-project)
@@ -54,14 +54,14 @@ Geography or Biology. A quiz enabling the user to test their knowledge of geogra
 ## Quize Structure:
 
 ### Start Menu:
-![Start_Quize](/assets/images/..) 
+![Start_Quize](/assets/images/screenshots/Start.png) 
    * Info about
    * Start Button
    * User Name optional.
    * ?
 
-### Quize Category Choice:
-![Game_Choice](/assets/images/screenshots/)
+### Quize categories Choice:
+![Game_Choice](/assets/images/screenshots/quize_categories.png)
 
    * Game categorry choice.
 
