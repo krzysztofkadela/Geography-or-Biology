@@ -99,7 +99,11 @@ The name of the quiz will be changed in the future as new categories are added.
        * Section with id 'choice_game' is displayed by deleting the class 'invisible'.
        * The username is taken and assigned to the variable.
        * The results variable is declared and gets its value from the function 'setQuestionsInRandomPositions()'.
-     * If   
+     * Two separate buttons for geography and biology (in the future there will be one working for different categories).
+      * If the "Geography" is presset :
+       * 'select_game' set to invisible.
+       * 'question_area' set to invisible.
+       * button to submit bio quiz question set 'visible'.
 
  * Functions :
 

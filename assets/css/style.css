@@ -424,4 +424,9 @@ body {
 /*Media query: Laptop  (900px and up)*/
 @media screen and (min-width: 1200px){
 
+  /*Questions section*/
+  .btn_submit {
+    width: 20vw;
+    max-width: 300px;
+  }
 }

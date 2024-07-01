@@ -190,7 +190,7 @@ function startQuize(quizType) {
         document.getElementById("question_area").classList.remove("invisible");//'question_area' set to invisible.
         document.getElementById("bio_next_submit").classList.add("invisible");//button to submit bio quiz question 'visible' :-).
         loadGeoQuestions();
-
+    // if biology selected:
     } else if (quizType === "game_biology") {
         document.getElementById("select_game").classList.add("invisible");
         document.getElementById("question_area").classList.remove("invisible");
