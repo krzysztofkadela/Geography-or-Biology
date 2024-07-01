@@ -71,9 +71,15 @@ The name of the quiz will be changed in the future as new categories are added.
    * To move on to the next question, the user must select one of the answers and click the button "Submit Answer".
 
 ### Score display :
-   ![Display_results](/assets/images/screenshots/)
+   ![Display_results](/assets/images/screenshots/score_display.png)
    
-   * In this section, the user can find out what distinguishes Magdy's cakes from others.
+   * The section displayed after all questions have been answered.
+   * The section includes:
+     * A headline whose text changes depending on the number of points scored.
+     * Username, if the user does not provide a name, the default value is 'Player'.
+     * Number of incorrect answers.
+     * Number of correct answers.
+     * Restart game button allows you to restart the quiz and return to the "Start" section.
 
 
 ## Features coming soon:

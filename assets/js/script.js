@@ -137,8 +137,7 @@ document.addEventListener("DOMContentLoaded", function () {
                         score++;
                     }
                     currentQuiz++;
-                    console.log(score);
-
+                
                     if (currentQuiz < questionsGeo.length) {
                         loadGeoQuestions();
                     } else {
@@ -238,6 +237,7 @@ function loadBioQuestions() {
     answer3.innerText = currentQuizData.c;
     answer4.innerText = currentQuizData.d;
 }
+
 //deselectiong all selected answer to strat quiz again.
 function deselectAnswers() {
     quizAnswers.forEach(quizAnswers => quizAnswers.checked = false);
@@ -300,6 +300,8 @@ function cleareInput() {
     document.getElementById('myInput').value = ''; // Set the value to an empty string
 }
 
+
+// changes the background for the selected element (unused part of a larger project).
 function changeBackgroundImage(id){
 
  let elementId = document.getElementById(id);
