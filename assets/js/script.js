@@ -307,7 +307,7 @@ function changeBackgroundImage(id){
  let elementId = document.getElementById(id);
  elementId.style.background='url(assets/images/pexels-sadface_100.jpg) no-repeat center center/cover';
 }
-//function returns array with 5 random numbers
+//function returns array with 5 random numbers (warning!! in final version  need to take 2 paramiters  )
 function randomQuestions() {
     let questionsRandomOrder= [];
 
