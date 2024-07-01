@@ -115,7 +115,10 @@ The name of the quiz will be changed in the future as new categories are added.
 ## Testing:
  * In order to check whether the code does not contain errors, they were used
    TW3C Markup Validator and W3C CSS Validator services.
+   To check the correctness of the JS code, the jshint tool was used.
 
+
+ * [jshint](https://jshint.com/)
  * [W3C Markup Validtor](https://validator.w3.org/)
  * [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 
@@ -166,10 +169,11 @@ The name of the quiz will be changed in the future as new categories are added.
 * Dev Tools was used to test how the site looks on various screen sizes.
 
 ### Lighthouse testing:
-
+   ![lighthouse](/assets/images/screenshots/lighthouse_desktop.png)
+  
 #### Mobile analysis
-
-
+   ![lighthouse](/assets/images/screenshots/start_Lighthouse.png)
+  
 
 ## Deployment:
 
