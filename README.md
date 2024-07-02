@@ -99,11 +99,23 @@ The name of the quiz will be changed in the future as new categories are added.
        * Section with id 'choice_game' is displayed by deleting the class 'invisible'.
        * The username is taken and assigned to the variable.
        * The results variable is declared and gets its value from the function 'setQuestionsInRandomPositions()'.
-     * Two separate buttons for geography and biology (in the future there will be one working for different categories).
-      * If the "Geography" is presset :
+     * In the quiz selection section there are two buttons 'Geography' and 'Biology'. Both of them call functions 'startQuize() 
+       when clicked.
+      * If the "Geography" is pressed :
        * 'select_game' set to invisible.
-       * 'question_area' set to invisible.
-       * button to submit bio quiz question set 'visible'.
+       * 'question_area' set to visible.
+       * Button to submit bio quiz question set to 'invisible'.
+       * Button to submit geo quiz question set to 'visible'.
+       * The loadGeoQuestions() function is called and displays geography questions.
+      * If the "Bilogogy" is pressed :
+       * 'select_game' set to invisible.
+       * 'question_area' set to visible.
+       *  Button to submit geography quiz question set to 'invisible'.
+       *  Button to submit biology quiz question set to 'visible'.
+       *  The loadBioQuestions() function is called and displays biology questions.
+       * After completing the quiz, a section giving the quiz result is displayed.
+      * If the 'Reset Game' button is pressed:
+       * Restarts the game and returns to the start page. 
 
  * Functions :
 
@@ -199,6 +211,7 @@ The name of the quiz will be changed in the future as new categories are added.
     <td>Game restart.</td>
   </tr>
 </table>
+
 
 
 * The website was tested on Google Chrome, Microsoft Edge.
