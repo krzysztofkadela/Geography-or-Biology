@@ -369,9 +369,9 @@ function displayScore(score, name) {
         userName.innerText=name;
     }
    //different comments depending on good answers.
-    if(score===4){
+    if(score===5){
         scoreComment.innerText="Perfect!! You are the best!";
-    }else if(score>0 && score <0){
+    }else if(score>2 && score <5){
         scoreComment.innerText="Good Job ! ";
     }else {
         scoreComment.innerText="You still need to study a bit.";

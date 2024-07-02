@@ -93,20 +93,25 @@ The name of the quiz will be changed in the future as new categories are added.
 
  * EventListeners :
     * After DOM is loaded each button is getting Event Listener.
+
      * The conditional if statement checks which button was selected by the user by checking its id.
+
      * If the "Start" button has been pressed :
        * Section with id 'welcome' was hidden by adding a class 'invisible'.
        * Section with id 'choice_game' is displayed by deleting the class 'invisible'.
        * The username is taken and assigned to the variable.
        * The results variable is declared and gets its value from the function 'setQuestionsInRandomPositions()'.
+
      * In the quiz selection section there are two buttons 'Geography' and 'Biology'. Both of them call functions 'startQuize() 
        when clicked.
+
       * If the "Geography" is pressed :
        * 'select_game' set to invisible.
        * 'question_area' set to visible.
        * Button to submit bio quiz question set to 'invisible'.
        * Button to submit geo quiz question set to 'visible'.
        * The loadGeoQuestions() function is called and displays geography questions.
+
       * If the "Bilogogy" is pressed :
        * 'select_game' set to invisible.
        * 'question_area' set to visible.
@@ -114,17 +119,32 @@ The name of the quiz will be changed in the future as new categories are added.
        *  Button to submit biology quiz question set to 'visible'.
        *  The loadBioQuestions() function is called and displays biology questions.
        * After completing the quiz, a section giving the quiz result is displayed.
+
       * If the 'Reset Game' button is pressed:
        * Restarts the game and returns to the start page. 
 
  * Functions :
 
-    * function startQuize(quizType) 
+    * Function startQuize(quizType) 
       * A function that takes the value of the "quizeType" variable and, 
       * depending on the selected category, calls the appropriate function that displays questions.
       * By adding an appropriate class, it hides unnecessary elements and displays elements with questions.
-   * function setQuestionsInRandomPositions()
+
+   * Function setQuestionsInRandomPositions() (this function is not in use any more)
       * Sets question numbers in random order and returns an array with these numbers.
+
+   * Functions  loadGeoQuestions() and loadBioQuestions()
+      * Invokes a function deselectAnswers() set all answers to unselected.
+      * Take the first question from the geography/biology quiz and assigns it to a variable currentQuizData.
+      * Displays question and answer changing 'innerText' property for each element.
+
+   * Function deselectAnswers()
+      * Unselect all selected answers.
+
+   * Function function submitAnswer()
+      * function using property '.forEach' checks which answer has been selected and assigns the id value to the 'answer' variable.
+
+   * 
 ---
 ## Technologies used in the project:
 
