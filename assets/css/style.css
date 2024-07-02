@@ -227,9 +227,10 @@ body {
   width: 65vw;
   height: 60vh;
   font-size: 3vh;
+  font-weight: 600;
   min-height: 200px;
-  background-color: black;
-  color: #fafafa;
+  background: url(../images/pexels-inspiredimage_150.jpg) no-repeat center center/cover;
+  color: #141313;
   border: 2px solid rgb(36, 30, 30);
   border-radius: 5px;
   padding-top: 40px;
@@ -237,8 +238,8 @@ body {
 
 /**/
 #score_comment {
-  font-size: 3vh;
-  color: #fafafa;
+  font-size: 4vh;
+  color: #141313;
 }
 
 #restart {

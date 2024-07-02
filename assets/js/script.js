@@ -307,14 +307,14 @@ function changeBackgroundImage(id){
  let elementId = document.getElementById(id);
  elementId.style.background='url(assets/images/pexels-sadface_100.jpg) no-repeat center center/cover';
 }
-//function returns array with 5 random numbers (warning!! in final version  need to take 2 paramiters  )
+//function returns array with 5 uniq random numbers.
 function randomQuestions() {
     let questionsRandomOrder= [];
 
     while (questionsRandomOrder.length < 5) {
-        let randomNumber = Math.floor(Math.random() * 10) + 1;
+        let randomNumber = Math.floor(Math.random() * 10);
         if (!questionsRandomOrder.includes(randomNumber)) {
-            wylosowaneLiczby.push(randomNumber);
+            questionsRandomOrder.push(randomNumber);
         }
     }
 
