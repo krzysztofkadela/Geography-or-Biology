@@ -46,7 +46,7 @@ const questionsBio = [{
     },
     {
         question: "What is the function of ribosomes in a cell?",
-        a: "Storage of genetic material",
+        a: "Storage material",
         b: "Energy production",
         c: "Protein synthesis",
         d: "Waste removal",
