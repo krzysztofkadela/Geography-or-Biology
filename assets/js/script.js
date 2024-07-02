@@ -175,7 +175,8 @@ document.addEventListener("DOMContentLoaded", function () {
                 const userName = document.getElementById("myInput").value;
                 playerName=userName;
                 //the number of questions set in random order and assigned to the variable 'result'.
-                result = setQuestionsInRandomPositions();
+                //result = setQuestionsInRandomPositions();
+                result = randomQuestions();
             //part used to check answers after selecting a geography quiz.
             } else if (this.getAttribute("id") === "geo_next_submit") {
                 //if the user selects a geography quiz, questions.
@@ -201,8 +202,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         score++;
                     }
                     currentQuiz++; 
-
-                    if (currentQuiz < questionsBio.length) {
+                    // currentQuize smaller then number of questions.
+                    if (currentQuiz < result.length) {
                         loadBioQuestions();
                     } else {
                         displayScore(score, playerName);
@@ -328,7 +329,7 @@ function displayScore(score, name) {
         scoreComment.innerText="You still need to study a bit.";
     }
     //userName.innerText=name;
-    myInncorect.innerText = 4 - score;
+    myInncorect.innerText = 5 - score;
     myScore.innerText = score;
 }
 //the function sets the basic values ​​of variables to their initial values.
