@@ -234,8 +234,8 @@ document.addEventListener("DOMContentLoaded", function () {
                         score++;
                     }
                     currentQuiz++;
-                
-                    if (currentQuiz < questionsGeo.length) {
+                    //if currentQuiz smaller then number of questions.
+                    if (currentQuiz < result.length) {
                         loadGeoQuestions();
                     } else {
                         //display score function
