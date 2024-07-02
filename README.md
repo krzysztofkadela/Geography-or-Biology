@@ -150,7 +150,19 @@ The name of the quiz will be changed in the future as new categories are added.
       * The next condition checks the number of correct answers and, depending on the result, displays the equivalent comment.
 
    * Function restartGame()  
-     * 
+     * function restarts the game(quiz).
+     * Sets the necessary variables to the output values.
+     * Hide all items and displays the Start section to start the game again.
+
+   * Function cleareInput()  
+     * A small function that sets the value of the element with id 'myInput'(user name input box) to an empty string. 
+
+   * Function function randomQuestions()
+     * Function responsible for displaying five of 10 questions in random order without repeating the questions..
+     * Checks whether the numbers are not repeated.
+     * Saves in a variable 'questionsRandomOrder' (array).
+     * Returns an array with five numbers. 
+
 ---
 ## Technologies used in the project:
 
@@ -199,8 +211,6 @@ The name of the quiz will be changed in the future as new categories are added.
 
   * After solving the problem with most of the warnings, one remained
   ![jshint_warnings](/assets/images/screenshots/jshint_warnings.png)
-
-
 
 
 ### Manual Testing:
@@ -268,13 +278,9 @@ The name of the quiz will be changed in the future as new categories are added.
    * Live "Gography or biology" webside you can find by clicking this link:
      https://krzysztofkadela.github.io/Geography-or-Biology/
 
-
-## Bugs:
-  * .
-    * .
     
 ## Unfixed Bugs:
-   *js csript  
+   *   
    * 
 
 ## Credits:
