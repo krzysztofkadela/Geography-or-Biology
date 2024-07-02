@@ -266,7 +266,7 @@ document.addEventListener("DOMContentLoaded", function () {
                 //the value of the "button pressed by user" is assigned into the quizType variable and passed to satrt quiz function.
                 let quizType = this.getAttribute("id");
                 //launches the appropriate quiz selected by the user. 
-                startQuize(quizType);
+                startQuiz(quizType);
 
             }
         });
@@ -278,7 +278,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 //launches the appropriate quiz selected by the user.
 
-function startQuize(quizType) {
+function startQuiz(quizType) {
 
     //if geography selected:
     if (quizType === "game_geography") {

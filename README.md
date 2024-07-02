@@ -10,7 +10,7 @@ The name of the quiz will be changed in the future as new categories are added.
 
 ### [User_Experience_(UX)](#user-experienceux)
 * [User_expectations](#user-expectations)
-### [Quize Structure](#quize-structure-1)
+### [Quiz Structure](#quiz-structure-1)
 
 ### [Features_coming_soon](#features-coming-soon)
 ### [Technologies_used_in_the_project](#technologies-used-in-the-project)
@@ -48,11 +48,11 @@ The name of the quiz will be changed in the future as new categories are added.
   - - -
 
 
-## Quize Structure:
+## Quiz Structure:
 
 ### Start Menu:
-![Start_Quize](/assets/images/screenshots/start.png) 
-  * Start Quize Menu Contains:
+![Start_Quiz](/assets/images/screenshots/start.png) 
+  * Start Quiz Menu Contains:
     * An inscription encouraging you to take part in the quiz.
     * Information that the quiz contains several categories.
     * Start button allowing you to proceed to the next part of the quiz.
@@ -125,8 +125,8 @@ The name of the quiz will be changed in the future as new categories are added.
 
  * Functions :
 
-    * Function startQuize(quizType) 
-      * A function that takes the value of the "quizeType" variable and, 
+    * Function startQuiz(quizType) 
+      * A function that takes the value of the "quizType" variable and, 
       * depending on the selected category, calls the appropriate function that displays questions.
       * By adding an appropriate class, it hides unnecessary elements and displays elements with questions.
 
@@ -142,9 +142,15 @@ The name of the quiz will be changed in the future as new categories are added.
       * Unselect all selected answers.
 
    * Function function submitAnswer()
-      * function using property '.forEach' checks which answer has been selected and assigns the id value to the 'answer' variable.
+      * Function using property '.forEach' checks which answer has been selected and assigns the id value to the 'answer' variable.
 
-   * 
+   * Function displayScore(score, name)
+      * The function takes two parameters 'score' - good answers and 'name' the player's name.
+      * If the value of 'name' is an empty string, it sets the player's name to 'Player', otherwise it outputs the name provided by the user.
+      * The next condition checks the number of correct answers and, depending on the result, displays the equivalent comment.
+
+   * Function restartGame()  
+     * 
 ---
 ## Technologies used in the project:
 
@@ -277,8 +283,7 @@ The name of the quiz will be changed in the future as new categories are added.
    * Photos used in the project come from Pexels.com free photos https://www.pexels.com/.
    
 ### Other:
-   * 
-   * 
+   * Much of the information about html css and javascript was obtained from https://www.w3schools.com/.
 
    ## Acknowledgements:
 
