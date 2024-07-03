@@ -403,7 +403,7 @@ body {
     left: 20vw;
     bottom: 10vh;
     width: 75vw;
-    height: 80vh;
+    height: fit-content;
     max-width: 400px;
     max-height: 700px;
     padding: 10px 10px;
@@ -417,7 +417,7 @@ body {
     }
   
     #question{
-      margin-top: 1vh;
+      margin-top: 4vh;
       font-size: 25px;
     }
   
@@ -434,7 +434,7 @@ body {
 
 }
 
-/*Media query: Laptop  (900px and up)*/
+/*Media query: Laptop  (1200px and up)*/
 @media screen and (min-width: 1200px){
 
   /*Questions section*/
