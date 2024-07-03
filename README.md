@@ -294,6 +294,7 @@ The name of the quiz will be changed in the future as new categories are added.
    
 ### Other:
    * Much of the information about html css and javascript was obtained from https://www.w3schools.com/.
+   * The idea for displaying questions in the quiz and some of the functions were taken (modified to adapt to this game) from a   YouTube tutorial: https://www.youtube.com/watch?v=CqddbIrEM5I.
 
    ## Acknowledgements:
 
