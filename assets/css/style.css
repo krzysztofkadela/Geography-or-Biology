@@ -301,7 +301,7 @@ body {
   
   /*Welcome section h2 elemen*/
   #welcome h1 {
-    font-size: 30px;
+    font-size: 3vh;
   }
   /*User name input box*/
   #myInput_label{
