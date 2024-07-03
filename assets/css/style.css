@@ -32,7 +32,7 @@ body {
   position: absolute;
   background-color: rgba(99, 163, 165, 0.7);
   border: 2px solid black;
-  left: 9vw;
+  left: 12vw;
   bottom: 12vh;
   width: 68vw;
   max-height: 800px;
@@ -296,7 +296,7 @@ body {
   /*Font size for welcome section h2 element*/
   #welcome h2 {
     font-size: 5vh;
-    margin-top: 120px;
+    margin-top: 60px;
   }
   
   /*Welcome section h2 elemen*/
@@ -389,7 +389,7 @@ body {
   
   /*Font size for welcome section h2 element*/
   #welcome h2 {
-    font-size: 35px;
+    font-size: 4vh;
   }
   
   /*Welcome section h2 elemen*/
