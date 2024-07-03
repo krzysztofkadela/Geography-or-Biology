@@ -280,8 +280,12 @@ The name of the quiz will be changed in the future as new categories are added.
 
     
 ## Unfixed Bugs:
-   *   
-   * 
+   * During final testing, I discovered a few issues with displaying some elements on different screen sizes (responsive).
+       * Most of them have been corrected but some problems still exist and need to be solved later
+
+   * There is one more problem to solve, for functions declared within loops referencing an outer scoped variable.
+       * Due to time constraints, the problem has not been resolved but will be corrected soon.
+       * ![unfix_wornings](/assets/images/screenshots/unfix_worning.png)
 
 ## Credits:
     
