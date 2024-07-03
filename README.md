@@ -247,7 +247,12 @@ The name of the quiz will be changed in the future as new categories are added.
     <td>Game restart.</td>
   </tr>
 </table>
-
+   
+ * One error was detected in the button testing process:
+   * In the conditional statement : "if (answer === questionsBio[result[currentQuiz]].correctAnswer)" wrong value was entered.
+   * Before the fix : questionsBio[currentQuiz].correctAnswer - Due to this bug, correct answers were incorrectly checked.
+   * The correct value should be: questionsBio[result[currentQuiz]].correctAnswer , after this fix everything started working 
+   properly.
 
 
 * The website was tested on Google Chrome, Microsoft Edge.
